@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** Universal Selector **/
+*   {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** Main Content Container Styles **/
+.container {
+  position: relative;
+	width: 100%;
+  max-width: 900px;
+	height: 900px;
+  margin: -175px auto;
+}
+
+/** Page Body Styles **/
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0px;
+}
+
+/** Box Size **/
+#box {
+  width: 300px;
+	height: 300px;
+}
+/** Individual Box Styles **/
+.box1 {
+  margin: 0 0 0 600px;
+	background-image:url(../exercise/img/Yosemite_0002_03.png);
+}
+.box2 {
+  margin: -300px 0 0 0;
+	background-image:url(../exercise/img/Yosemite_0000_01.png);
+}
+.box3 {
+  margin: -300px 0 0 300px;
+	background-image:url(../exercise/img/Yosemite_0001_02.png);
+}
+.box4 {
+  margin: 0;
+	background-image:url(../exercise/img/Yosemite_0003_04.png);
+}
+.box5 {
+  margin: -300px 0 0 600px;
+	background-image:url(../exercise/img/Yosemite_0005_06.png);
+}
+.box6 {
+  margin: -300px 0 0 300px;
+	background-image:url(../exercise/img/Yosemite_0004_05.png);
+}
+.box7 {
+  margin: 0 0 0 600px;
+	background-image:url(../exercise/img/Yosemite_0008_09.png);
+}
+.box8 {
+  margin: -300px 0 0 300px;
+	background-image:url(../exercise/img/Yosemite_0007_08.png);
+}
+.box9 {
+  margin: -300px 0 0 0;
+	background-image:url(../exercise/img/Yosemite_0006_07.png);
+}
+
+/** Title Bar Styles **/
+.brand {
+  position: fixed;
+	width: 100%;
+  max-width: 900px;
+  height: 100px;
+  background-color: black;
+  /** Title Bar Text Styles **/
+  font-size:36px;
+  color: white;
+  padding: 26px 0 0 15px;
+}
+
+/** Byline Styles **/
+.byline {
+  margin: 25px 0 0 25px;
+  padding: 30px 0 0 15px;
+	background-color:#E0E0E0;
+  width: 150px;
+	height: 150px;
+}
