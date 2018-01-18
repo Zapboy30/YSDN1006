@@ -106,15 +106,34 @@ nav li {
 header {
 font-size: 60px;
 font-family: 'Open Sans';
+color: #454545;
 font-weight: 700;
 text-align: center;
 }
 
-article {
+#subheader {
+	margin: -32px 0 0 350px;
+	position: relative;
+	font-weight: bold;
 	font-family: 'Lora';
-	font-size: 24px;
+	font-size: 18px;
 	text-align: center;
-	color: #565656;
+	color: #BD1550;
+	text-shadow: 1px 1px 0 #bcbcbc, 3px 3px 0 #9c9c9c;
+	animation: subheader .60s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes subheader {
+	0% {
+		transform: scale(0.85) rotate(-24deg);
+	}
+	65% {
+		transform: scale(1.1) rotate(-24deg);
+	}
+	100% {
+		transform: scale(1) rotate(-24deg);
+	}
 }
 
 section h3 {
