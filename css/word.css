@@ -7,20 +7,9 @@ font-family: 'Playfair Display', serif;
 font-family: 'Open Sans', sans serif;
 font-family: 'Lora', serif;
 
-/* From http://green-beast.com/blog/?p=109
-  The star selector is used to target every element.  This is
-  often used to zero out the margin and padding.  This
-  creates some common ground from which to begin.
-*/
 * {
 }
 
-/*
-  body is used to provide basic page styles meant to be inherited
-  by nearly all of the page’s children: font-face, size, alignment,
-  etc. Some use the html selector, but I have never done that so
-  it’s not listed.
-*/
 html, body {
 font-family: 'Lora', Helvetica, Arial, sans-serif;
 margin: 0;
@@ -30,7 +19,7 @@ overflow-x: hidden;
 overflow-y: hidden;
 }
 #bg {
-	background: url(https://source.unsplash.com/OfaDD5o8hpk/1600x900);
+	background: url(../img/bgword.jpg) no-repeat center center fixed;
 	background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,59 +29,24 @@ overflow-y: hidden;
   height:100%;
 }
 
-
-/*
-  The wrapper div can be used to contain the page itself. It can
-  also redefine some characteristics inherited from the body. It
-  is high on this page as it’ll contain everything else used.
-*/
 #container {
 	position: relative;
-	margin: 20% auto 0 auto;
+	margin: 16% auto 0 auto;
 	width: 100%;
-	max-width: 500px;
+	max-width: 525px;
 }
-.cont {margin: 0% auto 0 auto;
+.cont {margin: 0 auto;
 width: 100%;
-max-width: 500px;}
+max-width: 525px;}
 
-/*
-  Most pages will have links. Let’s style them using a anchor
-  element. Some will write this as a:link. I don’t — I don’t
-  see the need
-*/
 a {
 color: #fff;
 text-decoration: none;
 }
 
-/*
-  Links really should have some interactivity characteristics for
-  accessibility and usability reasons. The a:hover pseudo-class is
-  offered as is a:focus. Internet Explorer (IE) doesn’t support
-  a:focus, but it does use the a:active state so it’s here too.
-*/
 a:hover, a:focus, a:active {
 color: red;
 text-decoration: none;
-}
-
-/*
-  Focus/active should be different than hover is some regards, such
-  as providing a background color to make it highly visible to
-  keyboard users. Thus, certain focal styles may be redefined.
-*/
-
-a:focus, a:active {
-}
-
-/*
-  In addition to background images, most web pages will offer
-  embedded images (img), so I will offer them here. Mostly this
-  is used to remove borders and text-decoration
-  (if the image is a link).
-*/
-img, a img {
 }
 
 nav {
@@ -102,7 +56,7 @@ nav {
 	height: 35px;
 	background-color: black;
 	z-index: 100;
-	opacity: 0.6;
+	opacity: 0.65;
 }
 nav ul {
 	list-style-type: none;
@@ -121,91 +75,39 @@ nav li {
 	letter-spacing: 2px;
 }
 
-#masthead {
-	margin: 115px 0 115px 0;
-}
-
-header {
-font-size: 60px;
-font-family: 'Open Sans';
-color: #454545;
-font-weight: 700;
-text-align: center;
-}
-
-#subheader {
-	margin: -32px 0 0 350px;
-	position: relative;
-	font-weight: bold;
-	font-family: 'Lora';
-	font-size: 18px;
-	text-align: center;
-	color: #BD1550;
-	text-shadow: 1px 1px 0 #bcbcbc, 3px 3px 0 #9c9c9c;
-	animation: subheader .35s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-}
-@-webkit-keyframes subheader {
-	0% {
-		transform: scale(0.85) rotate(-24deg);
-	}
-	100% {
-		transform: scale(1) rotate(-24deg);
-	}
-}
-
 #word{
 	display: none;
-	margin-top: -15px;
-	padding-bottom: 22px;
-	font-family: 'Lora';
-	font-size: 18px;
-	line-height: 28px;
+	padding: 20px;
 	color: #2d2d2d;
+	/**background-color: beige;
+	border-radius: 25px;**/
 }
 
-section h3 {
-	margin-top: 45px;
-	font-family: 'Open Sans';
-	font-size: 38px;
-	font-weight: 700;
-}
-section p {
-	margin-top: -15px;
-	padding-bottom: 22px;
-	font-family: 'Lora';
-	font-size: 18px;
-	line-height: 28px;
-	color: #2d2d2d;
-}
-
-footer {
-font-size: 11px;
-font-family: 'Lora';
-color: #c0c0c0;
-margin: 5px 0 5px 0;
-text-align: center;
-}
-
-/** The Word of the Minute styles **/
 #word h1 {
-	color: /**rgb(59, 62, 65)**/ #222 ;
+	padding: 0px;
+	margin: 0px;
+	color: #000 ;
 	font: 'Playfair Display';
 	font-weight: 300;
-	font-size: 60px;
+	font-size: 74px;
 	letter-spacing: 0.9px;
-} #word .wordtype {
-	color: /**rgb(59, 62, 65)**/ #222 ;
-	font: 'Lora';
+} 
+#word .wordtype {
 	list-style-type: none;
 	padding: 0;
+	margin: 5px 0px 10px 0px;
 }
 #word .wordtype li {
 	display: inline;
+	font-size: 20px;
+	color: rgb(59, 62, 65) ;
+	font: 'Lora';
 }
  #word .definition {
-	color: /**rgb(59, 62, 65)**/ #222 ;
+	margin: 0;
+	padding: 0;
+	color: rgb(59, 62, 65) ;
 	font: 'Lora';
+	font-size: 18px;
 	list-style-type: none;
 }
