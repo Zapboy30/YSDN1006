@@ -45,7 +45,7 @@ function pronounceIt() {
         success: function(data) {
             if (data.length > 0) {
               var input = data[0].raw;
-              var output = "\\ <em>" + input.slice(1,-1) + "</em> \\ &nbsp;&nbsp;<strong>noun</strong>";
+              var output = "\\ <em>" + input.slice(1,-1) + "</em> \\";
               $("#quoi1").append(output);
               console.log(input);
             }
@@ -57,7 +57,7 @@ function defineIt() {
     var apiKey = "1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f";
     var word = $("#mot1").text();
     //var word = "test";
-    var apiUrl = baseUrl + word + "/definitions?limit=1&includeRelated=true&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=" + apiKey;
+    var apiUrl = baseUrl + word + "/definitions?limit=1&includeRelated=true&sourceDictionaries=wiktionary&useCanonical=true&includeTags=false&api_key=" + apiKey;
 
     $.ajax({
         type: "GET",
@@ -65,6 +65,7 @@ function defineIt() {
         dataType: "json",
         success: function(data) {
           $("#hein").append(data[0].text);
+          $("#leur").append(data[0].partOfSpeech);
           resolve();
         }
     });
