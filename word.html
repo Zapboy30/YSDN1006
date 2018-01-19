@@ -3,23 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert Title Here</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/word.css">
 </head>
-<body>
+<body id="bg">
+  <nav>
+    <div class="cont">
+		<ul>
+			<li>
+        Word of the Minute
+			</li>
+      <li>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;</li>
+			<li id="demo">
+
+			</li>
+
+		</ul>
+  </div>
+	</nav>
+
 <div id="container">
-<h2>Word of the Minute</h2>
-<p id="demo"></p>
-<br>
-<hr>
-<br>
 <div id="word">
 <h1 id="mot1"></h1>
-<div id="quoi1"></div>
-<div id="leur"></div>
-<div id="hein"></div></div>
+<ul class="wordtype">
+<li id="quoi1"></li>
+<li id="leur"></li>
+</ul>
+<div id="hein" class="definition"></div>
 </div>
+</div>
+
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="word.js"></script>
+
   <!-- Javascript placed at the bottom for faster loading speeds -->
+
 </body>
 </html>

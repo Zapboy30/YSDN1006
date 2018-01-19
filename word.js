@@ -45,7 +45,7 @@ function pronounceIt() {
         success: function(data) {
             if (data.length > 0) {
               var input = data[0].raw;
-              var output = "\\ <em>" + input.slice(1,-1) + "</em> \\";
+              var output = "[<em>" + input.slice(1,-1) + "</em>]";
               $("#quoi1").append(output);
               console.log(input);
             }
@@ -65,14 +65,16 @@ function defineIt() {
         dataType: "json",
         success: function(data) {
           $("#hein").append(data[0].text);
-          $("#leur").append(data[0].partOfSpeech);
+          $("#leur").append("<strong>" + data[0].partOfSpeech + "</strong>");
           resolve();
         }
     });
 }
 
+
 $(document).ready(function() {
   randomWord().then(pronounceIt).then(defineIt);
+  $("#word").fadeIn(3000);
   var meVar = setInterval(function(){ meTime() }, 1000);
 
   function meTime() {
@@ -80,12 +82,16 @@ $(document).ready(function() {
     var sec = dat.getSeconds();
     var deadLine = 59;
     var temp = deadLine - sec;
+    if(temp < 6){
+      $("#word").fadeOut(5000);
+    }
     if(temp <= 0){
       document.getElementById("mot1").innerHTML = '';
       document.getElementById("quoi1").innerHTML = '';
       document.getElementById("hein").innerHTML = "";
       document.getElementById("leur").innerHTML = "";
     randomWord().then(pronounceIt).then(defineIt);
+    $("#word").fadeIn(2000);
   }
 
   }
