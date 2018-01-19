@@ -84,6 +84,7 @@ $(document).ready(function() {
       document.getElementById("mot1").innerHTML = '';
       document.getElementById("quoi1").innerHTML = '';
       document.getElementById("hein").innerHTML = "";
+      document.getElementById("leur").innerHTML = "";
     randomWord().then(pronounceIt).then(defineIt);
   }
 
