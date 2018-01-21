@@ -33,6 +33,50 @@ nav li {
   display: inline;
 } nav li a {color: white;}
 
+.btn {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 400;
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn:active, .btn:focus, .btn:hover {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #111;
+}
+.btn:active, .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.socialicons {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #111;
+  border-radius: 100%;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+}
+.socialicons:active, .socialicons:focus, .socialicons:hover {
+  background-color: #fff;
+  color: #111;
+}
+.downarrow {  text-align: center;
+  margin-top: 38%;}
+.downarrow a {
+  font-size: 60px;
+  color: #111;
+} .downarrow a:active. .downarrow a:focus, .downarrow a:hover {
+  color: #111;
+}
+
+
 .content {
  position:relative;
  width:100%
