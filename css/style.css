@@ -69,9 +69,10 @@ nav li {
 } .masthead {
   color: #fff;
 }
-.downarrow {  text-align: center;
-  margin-top: 38%;}
+.downarrow {  position: absolute; bottom: 0; left: 50%;}
 .downarrow a {
+  position: relative;
+  left: -50%;
   font-size: 60px;
   color: #fff;
 } .downarrow a:active. .downarrow a:focus, .downarrow a:hover {
