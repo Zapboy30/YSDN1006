@@ -6,12 +6,11 @@ body, html {
 
 .bgimg-1 {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/bgword.jpg");
+  background-image: url("../img/bgindex.jpg");
   min-height: 100%;
 }
 nav {
@@ -20,7 +19,7 @@ nav {
   opacity: 1;
 }
 nav h4 {
-  color: black;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -40,6 +39,7 @@ nav li {
   font-weight: 400;
   background-color: transparent;
   border-color: #fff;
+  color: #fff;
 }
 .btn:active, .btn:focus, .btn:hover {
   background-color: #fff !important;
@@ -66,14 +66,16 @@ nav li {
 .socialicons:active, .socialicons:focus, .socialicons:hover {
   background-color: #fff;
   color: #111;
+} .masthead {
+  color: #fff;
 }
 .downarrow {  text-align: center;
   margin-top: 38%;}
 .downarrow a {
   font-size: 60px;
-  color: #111;
+  color: #fff;
 } .downarrow a:active. .downarrow a:focus, .downarrow a:hover {
-  color: #111;
+  color: #fff;
 }
 
 
