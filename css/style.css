@@ -78,7 +78,7 @@ nav li {
 } .downarrow a:active. .downarrow a:focus, .downarrow a:hover {
   color: #fff;
 }
-
+/*********** END OF SECTION ***********/
 
 .content {
  position:relative;
@@ -91,18 +91,18 @@ nav li {
  width:100%;
  height:100%
 }
-.contentwork{
+
+/** Portfolio Section **/
+.content-work{
   padding:100px 0 250px;
   z-index: -5;
-} .contentwork svg {z-index: -100;}
-.contentwork img {
+}
+.content-work svg {z-index: -100;} /** move the vector shape to the back **/
+.content-work img {
   display: block;
   margin: 0 auto;
 }
-
-
-
-.jim {
+.item-work {
   position: relative;
   width: 433px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -111,14 +111,12 @@ nav li {
   margin-right: auto;
   margin-bottom: 35px;
 }
-
-.jimage {
+.image-work {
   display: block;
   width: 100%;
   height: auto;
 }
-
-.overlay {
+.overlay-work {
   transition: .3s ease;
   opacity: 0;
   position: absolute;
@@ -128,38 +126,42 @@ nav li {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.jim:hover {
+.item-work:hover {
   margin-top: -10px;
 }
-
-.jim:hover .overlay {
+.item-work:hover .overlay-work {
   opacity: 1;
 }
-
-.jtext {
+.text-work {
   background-color: #f3f3f3;
   color: black;
   font-size: 16px;
   padding: 16px 32px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/*********** END OF SECTION ***********/
 
-
-
+/** About Me Section **/
 .contentabout{
   margin: -360px 0 0 0;
   padding:220px 0 250px;
   z-index: -1;
-}.contentabout svg {
+}
+.contentabout svg {
   z-index: -2;
 }
+.contentabout p{
+  font-size: 20px;
+}
+/*********** END OF SECTION ***********/
+
+/** Extras Section **/
 .contentextra{
-  margin: -180px 0 0 0;
+  margin: -200px 0 0 0;
   padding:100px 0 200px;
   z-index: -5;
-} .contentextra svg {z-index: -100;}
-
-
+}
+.contentextra svg {z-index: -100;}
 div.polaroid {
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -169,16 +171,25 @@ div.polaroid {
   text-align: center;
   margin-bottom: 35px
 }
-
 div.polaroidtxt {
   height: 30px;
   margin: -10px 0 0 0;
   padding: 10px;
   background-color: #f3f3f3;
 }
+.polaroidtxt {
+  color: #222;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.link-about {
+  text-decoration:none;
+}
 .polaroid:hover {
   margin-top: -10px;
 }
+/*********** END OF SECTION ***********/
 
 .contentfooter {
   margin: -60px 0 0 0;

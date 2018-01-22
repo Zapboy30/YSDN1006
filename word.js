@@ -72,7 +72,7 @@ function defineIt() {
         success: function(data) {
           //writes definition to a <div> tag
           $("#defineWord").append(data[0].text);
-          //writes word type (non, verb, ect) to an <li> tag
+          //writes word type (non, verb, ect) to an <li> tag 
           $("#wordType").append("<strong>" + data[0].partOfSpeech + "</strong>");
           resolve();
         }
