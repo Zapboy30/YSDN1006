@@ -15,7 +15,7 @@ function myTimer() {
 //get a random word through the wordnik api
 function randomWord(callback) {
     var baseUrl = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&minCorpusCount=1000&minDictionaryCount=4&api_key=";
-    var apiKey = "1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f";
+    var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74 "; //"1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f"
     var apiUrl = baseUrl + apiKey;
 
     //wo a Promise the 2nd wordnik api call will return before pronounceIt() executes the callback, which would give us nothing.
@@ -37,7 +37,7 @@ function randomWord(callback) {
 //pull the words pronounciation from the wordnik api
 function pronounceIt() {
     var baseUrl = "https://api.wordnik.com/v4/word.json/"
-    var apiKey = "1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f";
+    var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74";
     //var word = $("#mot1").text();
     var word = $("#randomWord").text();
     var apiUrl = baseUrl + word + "/pronunciations?useCanonical=true&typeFormat=ahd&limit=1&api_key=" + apiKey;
@@ -60,8 +60,7 @@ function pronounceIt() {
 // get the word type and pronounciation
 function defineIt() {
     var baseUrl = "https://api.wordnik.com/v4/word.json/"
-    var apiKey = "1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f";
-    var word = $("#randomWord").text();
+    var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74";
     //var word = "test";
     var apiUrl = baseUrl + word + "/definitions?limit=1&includeRelated=true&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=" + apiKey;
 
@@ -72,7 +71,7 @@ function defineIt() {
         success: function(data) {
           //writes definition to a <div> tag
           $("#defineWord").append(data[0].text);
-          //writes word type (non, verb, ect) to an <li> tag 
+          //writes word type (non, verb, ect) to an <li> tag
           $("#wordType").append("<strong>" + data[0].partOfSpeech + "</strong>");
           resolve();
         }
