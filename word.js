@@ -15,7 +15,7 @@ function myTimer() {
 //get a random word through the wordnik api
 function randomWord(callback) {
     var baseUrl = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&minCorpusCount=1000&minDictionaryCount=4&api_key=";
-    var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74 "; //"1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f"
+    var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74"; //"1380d58b8b5c33325130c0e8f340be6bc6fba6f7bb65bfc6f"
     var apiUrl = baseUrl + apiKey;
 
     //wo a Promise the 2nd wordnik api call will return before pronounceIt() executes the callback, which would give us nothing.
@@ -61,8 +61,8 @@ function pronounceIt() {
 function defineIt() {
     var baseUrl = "https://api.wordnik.com/v4/word.json/"
     var apiKey = "75bd943986463ca9f51040909e10ac03fab50a1c32c736c74";
-    //var word = "test";
-    var apiUrl = baseUrl + word + "/definitions?limit=1&includeRelated=true&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=" + apiKey;
+    var word = $("#randomWord").text();
+    var apiUrl = baseUrl + word + "/definitions?limit=1&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=" + apiKey;
 
     $.ajax({
         type: "GET",
