@@ -31,39 +31,39 @@ body {
 /** Individual Box Styles **/
 .box1 {
   margin: 0 0 0 600px;
-	background-image:url(../exercise/img/Yosemite_0002_03.png);
+	background-image:url(../exercises/img/Yosemite_0002_03.png);
 }
 .box2 {
   margin: -300px 0 0 0;
-	background-image:url(../exercise/img/Yosemite_0000_01.png);
+	background-image:url(../exercises/img/Yosemite_0000_01.png);
 }
 .box3 {
   margin: -300px 0 0 300px;
-	background-image:url(../exercise/img/Yosemite_0001_02.png);
+	background-image:url(../exercises/img/Yosemite_0001_02.png);
 }
 .box4 {
   margin: 0;
-	background-image:url(../exercise/img/Yosemite_0003_04.png);
+	background-image:url(../exercises/img/Yosemite_0003_04.png);
 }
 .box5 {
   margin: -300px 0 0 600px;
-	background-image:url(../exercise/img/Yosemite_0005_06.png);
+	background-image:url(../exercises/img/Yosemite_0005_06.png);
 }
 .box6 {
   margin: -300px 0 0 300px;
-	background-image:url(../exercise/img/Yosemite_0004_05.png);
+	background-image:url(../exercises/img/Yosemite_0004_05.png);
 }
 .box7 {
   margin: 0 0 0 600px;
-	background-image:url(../exercise/img/Yosemite_0008_09.png);
+	background-image:url(../exercises/img/Yosemite_0008_09.png);
 }
 .box8 {
   margin: -300px 0 0 300px;
-	background-image:url(../exercise/img/Yosemite_0007_08.png);
+	background-image:url(../exercises/img/Yosemite_0007_08.png);
 }
 .box9 {
   margin: -300px 0 0 0;
-	background-image:url(../exercise/img/Yosemite_0006_07.png);
+	background-image:url(../exercises/img/Yosemite_0006_07.png);
 }
 
 /** Title Bar Styles **/
