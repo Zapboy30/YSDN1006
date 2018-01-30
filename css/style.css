@@ -4,7 +4,9 @@ body, html {
   background-color: #f3f3f3;
 }
 
-.bgimg-1 {
+/***************************************/
+/***  index.html, section 1: front cover   ***/
+.section-one-cover-image {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -55,7 +57,7 @@ nav li {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.socialicons {
+.section-one-social {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -68,25 +70,25 @@ nav li {
   height: 38px;
   padding: 8px;
 }
-.socialicons:active, .socialicons:focus, .socialicons:hover {
+.section-one-social:active, .section-one-social:focus, .section-one-social:hover {
   background-color: #fff;
   color: #111;
 }
 
-.masthead {
+.section-one-intro{
   color: #fff;
 }
-.downarrow {  position: absolute; bottom: 0; left: 50%;}
-.downarrow a {
+.section-one-downarrow {  position: absolute; bottom: 0; left: 50%;}
+.section-one-downarrow a {
   position: relative;
   left: -50%;
   font-size: 60px;
   color: #fff;
-} .downarrow a:active. .downarrow a:focus, .downarrow a:hover {
+} .section-one-downarrow a:active. .section-one-downarrow a:focus, .section-one-downarrow a:hover {
   color: #fff;
 }
 /*********** END OF SECTION ***********/
-
+/****  index.html, section 2 - 4 Global   ****/
 .content {
  position:relative;
  width:100%
@@ -98,18 +100,18 @@ nav li {
  width:100%;
  height:100%
 }
-
-/** Portfolio Section **/
-.content-work{
+/*********** END OF SECTION ***********/
+/** index.html, section 2: portfolio work  **/
+.section-two-content{
   padding:100px 0 250px;
   z-index: -5;
 }
-.content-work svg {z-index: -100;} /** move the vector shape to the back **/
-.content-work img {
+.section-two-content svg {z-index: -100;} /** move the vector shape to the back **/
+.section-two-content img {
   display: block;
   margin: 0 auto;
 }
-.item-work {
+.section-two-item {
   position: relative;
   width: 433px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -118,12 +120,12 @@ nav li {
   margin-right: auto;
   margin-bottom: 35px;
 }
-.image-work {
+.section-two-image {
   display: block;
   width: 100%;
   height: auto;
 }
-.overlay-work {
+.section-two-text-overlay {
   transition: .3s ease;
   opacity: 0;
   position: absolute;
@@ -133,13 +135,13 @@ nav li {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.item-work:hover {
+.section-two-item:hover {
   margin-top: -10px;
 }
-.item-work:hover .overlay-work {
+.section-two-item:hover .section-two-text-overlay {
   opacity: 1;
 }
-.text-work {
+.section-two-text {
   background-color: #f3f3f3;
   color: black;
   font-size: 16px;
@@ -147,29 +149,27 @@ nav li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*********** END OF SECTION ***********/
-
-/** About Me Section **/
-.contentabout{
+/**** index.html, section 3: about me *****/
+.section-three-content {
   margin: -360px 0 0 0;
   padding:220px 0 250px;
   z-index: -1;
 }
-.contentabout svg {
+.section-three-content svg {
   z-index: -2;
 }
-.contentabout p{
+.section-three-content p{
   font-size: 18px;
 }
 /*********** END OF SECTION ***********/
-
-/** Extras Section **/
-.contentextra{
+/****** index.html, section 3: extras ******/
+.section-four-content{
   margin: -205px 0 0 0;
   padding:100px 0 200px;
   z-index: -5;
 }
-.contentextra svg {z-index: -100;}
-div.polaroid {
+.section-four-content svg {z-index: -100;}
+div.section-four-item {
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0;
@@ -178,29 +178,30 @@ div.polaroid {
   text-align: center;
   margin-bottom: 35px
 }
-div.polaroidtxt {
+div.section-four-text {
   height: 30px;
   margin: -10px 0 0 0;
   padding: 10px;
   background-color: #f3f3f3;
 }
-.polaroidtxt {
+.section-four-text {
   color: #222;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.link-about {
+.section-four-text-clear{
   text-decoration:none;
 }
-.polaroid:hover {
+.section-four-item:hover {
   margin-top: -10px;
 }
 /*********** END OF SECTION ***********/
-
-.contentfooter {
+/******* index.html, footer section  *******/
+.section-footer {
   margin: -60px 0 0 0;
   padding: 20px 0 0 0;
   z-index: -2;
   text-align: center;
-} .contentfooter svg {z-index: -3;}
+} .section-footer svg {z-index: -3;}
+/*********** END OF SECTION ***********/
