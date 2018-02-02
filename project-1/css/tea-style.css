@@ -22,10 +22,11 @@ body, html {
 }
 a {
   text-decoration: none;
-  color: #A30000;
+  color: #0f4880;
+  font-weight: 400;
 }
 a:hover, a:active {
-  color: #DB001A;
+  color: #2a7ab0;
 }
 .container {
 position: relative;
@@ -83,10 +84,12 @@ nav  ul {
 nav  li { display: inline;}
 nav li a, footer li a {
   color: #000;
+  font-weight: 300;
 }
 /** Highlights Current Page Nav Button**/
 .nav-current {
-  color:  #DB001A;
+  color:  #2a7ab0;
+  font-weight: 400;
 }
 /**  Hides arrow and disables highlighting on Page 1 and Page 3**/
 .nav-off{
@@ -101,7 +104,7 @@ nav li a, footer li a {
 /************* Article Styling  ************/
 /** Section Headers **/
 article h3 {
-font-family: 'Open Sans';
+font-family: 'Open Sans', sans-serif;
 font-size: 1.25em;
 font-weight: 700;
 letter-spacing: 3px;
@@ -124,6 +127,7 @@ figure {
 figure img.page-one-image {
   margin-top: 28px;
   width: 100%;
+  height: 717px;
 }
 figure img.page-two-image-lg {
   margin-top: 28px;
@@ -167,8 +171,16 @@ figure img.page-three-image-sm-2 {
   height: 435px;
 }
 figure .img-citation {
+  padding-top: 5px;
   clear: both;
-  font-size: 0.6875em;
+  font-size: 0.75em;
+  color: #464646;
+  margin: 0 auto;
+  width: 634px;
+  text-align: center;
+} figure .page-one-img-citation {
+  clear: both;
+  font-size: 0.75em;
   color: #464646;
   margin: 0 auto;
   width: 634px;
@@ -179,7 +191,7 @@ figure .img-citation {
 footer {
 margin-top: 32px;
 border-top: 1px #464646 solid;
-font-size: 0.6875em;
+font-size: 0.75em;
 color: #464646;
 line-height: 28px;
 }
