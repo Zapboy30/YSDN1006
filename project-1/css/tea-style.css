@@ -17,10 +17,10 @@ body, html {
 }
 a {
   text-decoration: none;
-  color: #BC2437;
+  color: #A30000;
 }
 a:hover, a:active {
-  color: #FF3750;
+  color: #DB001A;
 }
 .container {
 position: relative;
@@ -77,7 +77,7 @@ nav li a, footer li a {
   color: #000;
 }
 .nav-current {
-  color: #FF3750;
+  color:  #DB001A;
 }
 .nav-off{
   color: #fff;
