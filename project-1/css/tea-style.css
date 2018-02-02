@@ -102,25 +102,25 @@ margin-top: 32px;
 font-size: 1.125em;
 line-height: 33.1833px
 }
-article img.page-one {
+article img.page-one-image-content {
   margin-top: 28px;
   width: 100%;
-} article img.page-two-lg {
+} article img.page-two-image-content-lg {
   margin-top: 28px;
   width: 100%;
   height: 455px;
-} article img.page-two-sm-1 {
+} article img.page-two-image-content-sm-1 {
   margin-top: 15px;
   float: left;
   width: 470px;
   height: 255px;
-} article img.page-two-sm-2 {
+} article img.page-two-image-content-sm-2 {
   float: right;
   margin-top: 15px;
   width: 470px;
   height: 255px;
 }
-article img.page-three {
+article img.page-three-image-content {
   display: block;
   margin-left:auto;
   margin-right: auto;
