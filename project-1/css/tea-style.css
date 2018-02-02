@@ -1,3 +1,8 @@
+/**  Utah Teapot Wikipedia Pg Redesign  **/
+/** YSDN 1006 Visual Interactive Design **/
+/**  This Website is WCAG 2.0 Compliant **/
+/***************************************/
+/***** Import Halcyon Bold For Logo  *****/
 @font-face {
     font-family: 'Halcyon-Bold';
     src: url('../fonts/Halcyon-Bold.eot');
@@ -8,12 +13,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/*********** END OF SECTION ***********/
+/************* Global Styles  *************/
 body, html {
   background-color: #f3f3f3;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-
 }
 a {
   text-decoration: none;
@@ -28,8 +33,7 @@ margin: 0 auto;
 width: 960px;
 height: auto;
 padding-bottom: 45px;
-/* Rectangle 2: */
-background: #FFFFFF;
+background: #fff;
 box-shadow: 0 2px 6px 1px rgba(0,0,0,0.27);
 }
 .container-content {
@@ -38,11 +42,14 @@ box-shadow: 0 2px 6px 1px rgba(0,0,0,0.27);
   margin-left: auto;
   margin-right: auto;
 }
+/*********** END OF SECTION ***********/
+/***********  Navigation Styles ***********/
 nav {
   height: 70px;
   padding-top: 72px;
   border-bottom: 2px #000 solid;
 }
+/** Logo Styles **/
 nav header {
   font-family: "Halcyon-Bold", Helvetica, sans-serif;
   float: left;
@@ -60,6 +67,7 @@ nav h3 {
   letter-spacing: 4.91px;
   margin: 0;
 }
+/** Page Navigation Button Styles **/
 nav  ul {
   float: right;
   list-style: none;
@@ -76,9 +84,11 @@ nav  li { display: inline;}
 nav li a, footer li a {
   color: #000;
 }
+/** Highlights Current Page Nav Button**/
 .nav-current {
   color:  #DB001A;
 }
+/**  Hides arrow and disables highlighting on Page 1 and Page 3**/
 .nav-off{
   color: #fff;
   -webkit-touch-callout: none;
@@ -87,6 +97,9 @@ nav li a, footer li a {
   -ms-user-select: none;
   user-select: none;
 }
+/*********** END OF SECTION ***********/
+/************* Article Styling  ************/
+/** Section Headers **/
 article h3 {
 font-family: 'Open Sans';
 font-size: 1.25em;
@@ -97,30 +110,39 @@ padding: 0;
 margin-top: 32px;
 margin-bottom: -26px;
 }
+/** Article Text **/
 article p {
 margin-top: 32px;
 font-size: 1.125em;
 line-height: 33.1833px
 }
-article img.page-one-image {
+/** Page Images **/
+figure {
+  width: 960px;
+  margin: 0;
+}
+figure img.page-one-image {
   margin-top: 28px;
   width: 100%;
-} article img.page-two-image-lg {
+}
+figure img.page-two-image-lg {
   margin-top: 28px;
   width: 100%;
-  height: 455px;
-} article img.page-two-image-sm-1 {
+  height: 597px;
+}
+figure img.page-two-image-sm-1 {
   margin-top: 15px;
   float: left;
   width: 470px;
-  height: 255px;
-} article img.page-two-image-sm-2 {
+  height: 308px;
+}
+figure img.page-two-image-sm-2 {
   float: right;
   margin-top: 15px;
   width: 470px;
-  height: 255px;
+  height: 308px;
 }
-article img.page-three-image {
+figure img.page-three-image-lg {
   display: block;
   margin-left:auto;
   margin-right: auto;
@@ -128,7 +150,23 @@ article img.page-three-image {
   width: 678px;
   align: center;
 }
-article .img-citation {
+.page-three-figure-sm {
+  width: 678px;
+  margin: 0 auto;
+}
+figure img.page-three-image-sm-1 {
+  margin-top: 15px;
+  float: left;
+  width: 408px;
+  height: 435px;
+}
+figure img.page-three-image-sm-2 {
+  float: right;
+  margin-top: 15px;
+  width: 246px;
+  height: 435px;
+}
+figure .img-citation {
   clear: both;
   font-size: 0.6875em;
   color: #464646;
@@ -136,6 +174,8 @@ article .img-citation {
   width: 634px;
   text-align: center;
 }
+/*********** END OF SECTION ***********/
+/************* Footer Styles *************/
 footer {
 margin-top: 32px;
 border-top: 1px #464646 solid;
@@ -156,3 +196,4 @@ footer  ul {
   letter-spacing: 4.91px;
 }
 footer  li { display: inline;}
+/*********** END OF SECTION ***********/
