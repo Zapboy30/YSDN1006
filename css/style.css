@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  background-color: red;
+  background-color: #22adc2;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -22,7 +22,7 @@ body, html {
 
 /***************************************/
 /***  index.html, section 1: front cover   ***/
-.section-one-cover-image {
+.s1-cover-image {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -61,7 +61,7 @@ nav li {
   display: inline;
 } nav li a {color: white; text-decoration: none; }
 
-.btn {
+.nav-button {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -84,16 +84,16 @@ nav li {
 }
 
 
-.btn:active, .btn:focus, .btn:hover {
+.nav-button:active, .nav-button:focus, .nav-button:hover {
   background-color: #fff !important;
   border-color: #fff !important;
   color: #111;
 }
-.btn:active, .btn:focus {
+.nav-button:active, .nav-button:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.section-one-social {
+.nav-social {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -106,29 +106,29 @@ nav li {
   height: 32px;
   padding: 8px;
 }
-.section-one-social:active, .section-one-social:focus, .section-one-social:hover {
+.nav-social:active, .nav-social:focus, .nav-social:hover {
   background-color: #fff;
   color: #111;
 }
 
-.section-one-intro{
+.s1-intro{
   color: #fff;
-} .section-one-intro h1 {
+} .s1-intro h1 {
   font-weight: 300;
   font-size: 50px;
   letter-spacing: -1px;
-} .section-one-intro h3 {
+} .s1-intro h3 {
   font-weight: 300;
   font-size: 36px;
   letter-spacing: -1px;
 }
-.section-one-downarrow {  position: absolute; bottom: 0; left: 50%;}
-.section-one-downarrow a {
+.s1-next {  position: absolute; bottom: 0; left: 50%;}
+.s1-next a {
   position: relative;
   left: -50%;
   font-size: 60px;
   color: #fff;
-} .section-one-downarrow a:active. .section-one-downarrow a:focus, .section-one-downarrow a:hover {
+} .s1-next a:active, .s1-next a:focus, .s1-next a:hover {
   color: #fff;
 }
 
@@ -149,61 +149,6 @@ nav li {
  width:100%;
  height:100%
 }
-/*********** END OF SECTION ***********/
-/** index.html, section 2: portfolio work  **/
-.section-two-content{
-  padding-top: 100px;
-  z-index: -5;
-}
-.section-two-content svg {z-index: -100; height: 1000px;} /** move the vector shape to the back **/
-.section-two-content img {
-  display: block;
-  margin: 0 auto;
-}
-.section-two-item {
-  position: relative;
-  width: 450px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-.section-two-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.section-two-text-overlay {
-  transition: .3s ease;
-  opacity: 0;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 9;
-}
-.section-two-item:hover {
-  margin-top: -10px;
-}
-.section-two-item:hover .section-two-text-overlay {
-  opacity: 0.8;
-}
-.section-two-item:hover .section-two-text {
-  opacity: 1;
-}
-.section-two-text {
-  opacity: 0;
-  position: absolute;
-  padding: 25px;
-  top: 0%;
-  left: 0%;
-  color: black;
-  font-size: 16px;
-  z-index: 10;
-}
-/*********/
 .item-left {
   float: left;
 }
@@ -227,45 +172,95 @@ h3 {
   letter-spacing: -1px;
   font-weight: 300;
 }
-
-
+/*********** END OF SECTION ***********/
+/** index.html, section 2: portfolio work  **/
+.s2-content{
+  padding-top: 100px;
+  z-index: -5;
+}
+.s2-content img {
+  display: block;
+  margin: 0 auto;
+}
+.s2-item {
+  position: relative;
+  width: 433px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+}
+.s2-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.s2-text-overlay {
+  transition: .3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9;
+}
+.s2-item:hover {
+  margin-top: -10px;
+}
+.s2-item:hover .s2-text-overlay {
+  opacity: 0.8;
+}
+.s2-item:hover .s2-text {
+  opacity: 1;
+}
+.s2-text {
+  opacity: 0;
+  position: absolute;
+  padding: 25px;
+  top: 0%;
+  left: 0%;
+  color: black;
+  font-size: 16px;
+  z-index: 10;
+}
 
 /*********** END OF SECTION ***********/
 /**** index.html, section 3: about me *****/
-section-three-content {
+s3-content {
   z-index: -1;
 }
-.section-three-content svg {
+.s3-content svg {
   z-index: -2;
   height: 725px;
   margin-top: -100px;
 }
-.section-three-content p{
+.s3-content p{
   font-size: 18px;
   line-height: 28.8px;
   font-weight: 400;
 }
-.section-three-content img {
+.s3-content img {
   width: 100%;
   max-width: 300px;
   border-radius: 100%;
 }
-.about-image {
-  float: left;
-}
-.about-text {
+
+.s3-text {
   width: 640px;
   float: right;
 }
 /*********** END OF SECTION ***********/
 /****** index.html, section 3: extras ******/
-.section-four-content{
+.s4-content{
 
 margin-top: 530px;
   z-index: -5;
 }
-.section-four-content svg { z-index: -100; height: 1100px; margin-top: -200px;}
-div.section-four-item {
+div.s4-item {
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0;
@@ -274,22 +269,19 @@ div.section-four-item {
   text-align: center;
   margin-bottom: 35px
 }
-div.section-four-text {
+div.s4-text {
   height: 30px;
   margin: -10px 0 0 0;
   padding: 10px;
   background-color: #f3f3f3;
 }
-.section-four-text {
+.s4-text {
   color: #222;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.section-four-text-clear{
-  text-decoration:none;
-}
-.section-four-item:hover {
+.s4-item:hover {
   margin-top: -10px;
 }
 /*********** END OF SECTION ***********/
