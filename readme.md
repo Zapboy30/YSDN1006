@@ -11,6 +11,7 @@ A lightweight portfolio website made for YSDN1006. [Live Demo](http://design.she
 
 * Responsive layout
 * Portfolio Pages
+* Better Typography
 * WCAG 2.0 AA Compliance Check
 
 ##License Info
