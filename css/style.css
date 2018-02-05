@@ -4,6 +4,20 @@ body, html {
   background-color: #f3f3f3;
 }
 
+#totop {
+  opacity: 0.8;
+    width : 82px;
+    height : 82px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    display : none;
+    font-size: 58px;
+} #totop a {
+  color: #222;
+}
+
 /***************************************/
 /***  index.html, section 1: front cover   ***/
 .section-one-cover-image {
@@ -89,6 +103,7 @@ nav li {
 } .section-one-downarrow a:active. .section-one-downarrow a:focus, .section-one-downarrow a:hover {
   color: #fff;
 }
+
 /*********** END OF SECTION ***********/
 /****  index.html, section 2 - 4 Global   ****/
 .content {
@@ -131,24 +146,32 @@ nav li {
   transition: .3s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  top: 0%;
+  left: 0%;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
 .section-two-item:hover {
   margin-top: -10px;
 }
 .section-two-item:hover .section-two-text-overlay {
+  opacity: 0.8;
+}
+.section-two-item:hover .section-two-text {
   opacity: 1;
 }
 .section-two-text {
-  background-color: #f3f3f3;
+  opacity: 0;
+  position: absolute;
+  padding: 25px;
+  top: 0%;
+  left: 0%;
   color: black;
   font-size: 16px;
-  padding: 16px 32px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10;
 }
 /*********** END OF SECTION ***********/
 /**** index.html, section 3: about me *****/
@@ -162,6 +185,11 @@ nav li {
 }
 .section-three-content p{
   font-size: 18px;
+}
+.section-three-content img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 100%;
 }
 /*********** END OF SECTION ***********/
 /****** index.html, section 3: extras ******/
