@@ -311,7 +311,7 @@ ul.img-list {width: 433px; margin: 0 auto; padding: 0;}
 
 ul.s4-img-list {width: 400px; margin: 0 auto; padding: 0}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   nav ul {
     margin-top: 0;
   }
