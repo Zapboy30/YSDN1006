@@ -315,9 +315,9 @@ ul.s4-img-list {width: 400px; margin: 0 auto; padding: 0}
   nav ul {
     margin-top: 0;
   }
-  .s3-text-box h2,  .s3-text-box p {margin-left: 225px; }
-   .s3-text-box h2 {margin-top: -200px;}
-  .s3-text-box img {width: 200px; height: 200px;}
+  .s3-text-box h2,  .s3-text-box p {margin-left: 0; }
+   .s3-text-box h2 {margin-top: 0;}
+  .s3-text-box img {display: none;}
 }
 @media only screen and (max-width: 567px) {
   #totop {
@@ -328,9 +328,7 @@ ul.s4-img-list {width: 400px; margin: 0 auto; padding: 0}
   }
 
 
-  .s3-text-box h2,  .s3-text-box p {margin-left: 0; }
-   .s3-text-box h2 {margin-top: 0;}
-  .s3-text-box img {display: none;}
+
   .s2-content img {
     width: 324px;
     height: 231px;
