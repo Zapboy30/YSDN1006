@@ -12,13 +12,3 @@ $("a").on('click', function(event) { // when an anchor is clicked.
         });
     }
 });
-
-// makes a sassy back to top appear in the bottom right corner
-$(document).ready(function() {
-  var windowHeight = $(window).height();
-
-  $(document).scroll(function() {
-      $('#totop').toggle($(this).scrollTop() > (windowHeight / 2));
-  });
-
-});

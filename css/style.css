@@ -1,20 +1,20 @@
 body, html {
   height: 100%;
   margin: 0;
-  background-color: #22adc2;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-weight: 400;
+  background-color: #22ADC2;
+  overflow-x: hidden;
 }
 
 #totop {
-  opacity: 0.8;
+  opacity: 0.5;
     width : 82px;
     height : 82px;
     right: 0;
     bottom: 0;
     position: fixed;
     z-index: 100;
-    display : none;
     font-size: 58px;
 } #totop a {
   color: #222;
@@ -35,13 +35,15 @@ body, html {
 nav {
   position: relative;
   padding-top: 15px;
+  width: 960px;
+  margin: 0 auto;
 }
 nav .nav-logo {
   color: #fff;
-  margin: 8px;
+  margin: 0;
   padding: 0px;
   width: 200px;
-  height: 30px;
+  height: 38px;
   background-image: url(../img/logo.svg);
   background-size: 200px 30px;
   background-repeat: no-repeat;
@@ -49,7 +51,7 @@ nav .nav-logo {
 }
 nav ul{
   list-style-type: none;
-  margin-top: -46px;
+  margin-top: -38px;
   padding: 0;
   float: right;
   text-transform: uppercase;
@@ -58,7 +60,7 @@ nav ul{
   line-height: 38px
 }
 nav li {
-  display: inline;
+  display: inline-block;
 } nav li a {color: white; text-decoration: none; }
 
 .nav-button {
@@ -111,16 +113,16 @@ nav li {
   color: #111;
 }
 
-.s1-intro{
+header {
   color: #fff;
-} .s1-intro h1 {
-  font-weight: 300;
+  letter-spacing: -1px;
+  margin-top: 20%;
+} header h1 {
   font-size: 50px;
-  letter-spacing: -1px;
-} .s1-intro h3 {
   font-weight: 300;
+} header h3 {
   font-size: 36px;
-  letter-spacing: -1px;
+  font-weight: 300;
 }
 .s1-next {  position: absolute; bottom: 0; left: 50%;}
 .s1-next a {
@@ -135,28 +137,11 @@ nav li {
 /*********** END OF SECTION ***********/
 /****  index.html, section 2 - 4 Global   ****/
 .container {
-  width: 960px;
+  position: relative;
   margin: 0 auto;
-}
-.content {
- position:relative;
- width:100%
-}
-.content svg {
- position:absolute;
- top:0;
- left:0;
- width:100%;
- height:100%
-}
-.item-left {
-  float: left;
-}
-.item-right {
-  float: right;
-}
-.clear {
-  clear: both;
+  width: 960px;
+  height: auto;
+
 }
 h2 {
   font-size: 42px;
@@ -172,128 +157,259 @@ h3 {
   letter-spacing: -1px;
   font-weight: 300;
 }
+
 /*********** END OF SECTION ***********/
+
+ul.img-list {
+  width: 911px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 308px;
+  margin: 0 20px 20px 0;
+  position: relative;
+  width: 433px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+span.text-content {
+  background: rgba(255,255,255,0.75);
+  color: black;
+  cursor: pointer;
+  display: table;
+  height: 308px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 433px;
+  opacity: 0;
+  -webkit-transition: opacity 240ms;
+  -moz-transition: opacity 240ms;
+  -o-transition: opacity 240ms;
+  transition: opacity 240ms;
+}
+span.text-content h3 {
+  padding: 20px;
+}
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+} ul.img-list li:hover {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
 /** index.html, section 2: portfolio work  **/
 .s2-content{
   padding-top: 100px;
-  z-index: -5;
 }
 .s2-content img {
   display: block;
   margin: 0 auto;
 }
-.s2-item {
-  position: relative;
-  width: 433px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 35px;
-}
-.s2-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.s2-text-overlay {
-  transition: .3s ease;
-  opacity: 0;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 9;
-}
-.s2-item:hover {
-  margin-top: -10px;
-}
-.s2-item:hover .s2-text-overlay {
-  opacity: 0.8;
-}
-.s2-item:hover .s2-text {
-  opacity: 1;
-}
-.s2-text {
-  opacity: 0;
-  position: absolute;
-  padding: 25px;
-  top: 0%;
-  left: 0%;
-  color: black;
-  font-size: 16px;
-  z-index: 10;
-}
 
 /*********** END OF SECTION ***********/
 /**** index.html, section 3: about me *****/
-s3-content {
-  z-index: -1;
-}
-.s3-content svg {
-  z-index: -2;
-  height: 725px;
-  margin-top: -100px;
-}
-.s3-content p{
-  font-size: 18px;
-  line-height: 28.8px;
-  font-weight: 400;
-}
-.s3-content img {
+
+/**.s3-content img {
+  margin-top: 80px;
+  position: relative;
+  z-index: 5;
   width: 100%;
   max-width: 300px;
   border-radius: 100%;
+}**/
+ul.s3-content {
+  width: 100vw;
+  list-style-type: none;
+  margin: -85px 0 0 0;
+  padding: 0;
+  text-align: left;
+  z-index: 10;
 }
 
-.s3-text {
-  width: 640px;
-  float: right;
+ul.s3-content li {
+  display: inline-block;
+  height: 525px;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+}
+span.s3-text-content {
+  z-index: 11;
+  color: black;
+  cursor: pointer;
+  display: table;
+  height: 400px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+} .s3-text-box {padding: 12vh 16vw;}
+ .s3-text-box h2,  .s3-text-box p {margin-left: 350px; }
+  .s3-text-box h2 {margin-top: -275px;}
+  .s3-text-box img {width: 300px; height: 300px;}
+ ul.s4-img-list li:hover {
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
 /*********** END OF SECTION ***********/
 /****** index.html, section 3: extras ******/
 .s4-content{
-
-margin-top: 530px;
-  z-index: -5;
+margin-top: -70px;
 }
-div.s4-item {
+.s4-content img {
+  display: block;
+  margin: 0 auto;
+
+}
+ul.s4-img-list {
+  width: 865px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 0 0 30px;
+  text-align: center;
+}
+
+ul.s4-img-list li {
+  display: inline-block;
+  height: 240px;
+  margin: 0 30px 40px 0;
+  position: relative;
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 0;
-  margin-left: 30px;
-  margin-right: 30px;
-  text-align: center;
-  margin-bottom: 35px
 }
-div.s4-text {
-  height: 30px;
-  margin: -10px 0 0 0;
-  padding: 10px;
-  background-color: #f3f3f3;
+span.s4-text-content {
+  background: #f3f3f3;
+  color: black;
+  cursor: pointer;
+  display: table;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 400px;
 }
-.s4-text {
-  color: #222;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.s4-item:hover {
+ ul.s4-img-list li:hover {
   margin-top: -10px;
+  margin-bottom: 50px;
 }
+
 /*********** END OF SECTION ***********/
+@media only screen and (max-width: 960px) {
+.container, nav {
+  width: 80%;
+}
+
+.s3-text-box {padding: 12vh 10vw;}
+
+
+ul.img-list {width: 433px; margin: 0 auto; padding: 0;}
+
+ul.s4-img-list {width: 400px; margin: 0 auto; padding: 0}
+}
+@media only screen and (max-width: 767px) {
+  nav ul {
+    margin-top: 0;
+  }
+  .s3-text-box h2,  .s3-text-box p {margin-left: 225px; }
+   .s3-text-box h2 {margin-top: -200px;}
+  .s3-text-box img {width: 200px; height: 200px;}
+}
+@media only screen and (max-width: 567px) {
+  #totop {
+    opacity: 0.5;
+      width : 62px;
+      height : 62px;
+      font-size: 48px;
+  }
+
+
+  .s3-text-box h2,  .s3-text-box p {margin-left: 0; }
+   .s3-text-box h2 {margin-top: 0;}
+  .s3-text-box img {display: none;}
+  .s2-content img {
+    width: 324px;
+    height: 231px;
+  }
+  ul.img-list {width: 324px; margin: 0 auto;}
+  ul.img-list li {
+    height: 231px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 324px;
+  }
+  span.text-content {
+    height: 231px;
+    width: 324px;
+  }
+
+.s4-content img {
+  width: 300px;
+  height: 150px;
+}
+ul.s4-img-list {width: 300px; margin: 0 auto;}
+ul.s4-img-list li {
+  height: 190px;
+  margin: 0 30px 40px 0;
+  width: 300px;
+}
+span.s4-text-content {
+  height: 40px;
+  width: 300px;
+}
+}
+@media only screen and (max-width: 420px) {
+  .s2-content img {
+    width: 216px;
+    height: 154px;
+  }
+    ul.img-list {width: 216px; margin: 0 auto;}
+  ul.img-list li {
+    height: 154px;
+    width: 216px;
+  }
+  span.text-content {
+    height: 154px;
+    width: 216px;
+  } span.text-content h3 {font-size: 18px;}
+
+.s4-content img {
+  width: 200px;
+  height: 100px;
+}
+  ul.s4-img-list {width: 200px; margin: 0 auto;}
+ul.s4-img-list li {
+  height: 120px;
+  margin: 0 30px 20px 0;
+  width: 200px;
+}
+ul.s4-img-list li:hover {
+ margin-top: -10px;
+ margin-bottom: 30px;
+}
+
+span.s4-text-content {
+  height: 20px;
+  width: 200px;
+} span.s4-text-content p {font-size: 11px;}
+}
+
+
+
 /******* index.html, footer section  *******/
 .section-footer {
-  margin: -80px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 20px 0;
   z-index: -2;
   text-align: center;
-  background-color: white;
+  background-color: #f3f3f3;
 } .section-footer svg {z-index: -3;}
 /*********** END OF SECTION ***********/
+
 #go-back {
   position: absolute;
   top: 0;

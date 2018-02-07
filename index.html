@@ -18,8 +18,7 @@
   <div id='totop'><a title="Back To Top" href="#top"><i class="icon-up-bold"></i></a></div>
   <!-- Section One: Masthead and Navigation -->
   <section class="s1-cover-image">
-    <div id="top" class="container">
-      <nav>
+      <nav  id="top">
             <div class="nav-logo"></div>
             <ul>
               <li><a  class="nav-button" href="#work">Work</a></li>
@@ -30,127 +29,107 @@
               <li ><a class="nav-social" href="https://forum.fork.sh/u/cosmicmocha/"><i class="icon-fork"></i></a></li>
             </ul>
       </nav>
-      <div class="s1-intro" style="margin-top: 25%">
+      <div class="container">
+        <header>
         <h1>Hi, I'm Pace Marier!</h1>
         <h3>A Designer, Photographer, &amp; Caffeine Lover</h3>
+      </header>
       </div>
-    </div>
+
     <div class="s1-next">
     <a href="#work"><i class="icon-down-open-big"></i></a>
   </div>
 </section>
 <!-- End of Section-->
 <!-- Section Two: Portfolio-->
-  <section id="work" class="content s2-content">
-    <div class ="container">
+  <section id="work" class="s2-content">
+    <div class="container">
         <h2 style="text-align:center;">Portfolio Projects</h2>
         <!--  Item One: Walden Website-->
-          <a href="portfolio-item-one.html">
-            <div class="s2-item item-left">
-            <img src="img/thumbnail-1.png" alt="Avatar" class="s2-image">
-            <div class="s2-text"><h3>Responsive Website</h3></div>
-            <div class="s2-text-overlay"></div>
-          </div>
-        </a>
-        <!-- Item Two: Logo Challenge-->
-          <a href="portfolio-item-two.html">
-            <div class="s2-item item-right">
-            <img src="img/thumbnail-2.png" alt="Avatar" class="s2-image">
-              <div class="s2-text"><h3>Logo Study</h3></div>
-            <div class="s2-text-overlay"></div>
-          </div>
-        </a>
-          <!-- Item Three: Magazine Cover -->
-          <a href="portfolio-item-three.html">
-            <div class="s2-item clear item-left">
-            <img src="img/thumbnail-3.png" alt="Avatar" class="s2-image">
-            <div class="s2-text"><h3>Magazine Cover</h3></div>
-            <div class="s2-text-overlay"></div>
-          </div>
-        </a>
-          <!-- Item Four: Type Posters -->
-          <a href="portfolio-item-four.html">
-            <div class="s2-item item-right">
-            <img src="img/thumbnail-4.png" alt="Avatar" class="s2-image">
-            <div class="s2-text"><h3>Time Posters</h3></div>
-            <div class="s2-text-overlay"></div>
-          </div>
-        </a>
-    </div>
+        <ul class="img-list">
+        <li>
+        <a href="portfolio-item-one.html">
+      <img src="img/thumbnail-1.png" />
+      <span class="text-content"><h3>Responsive Website</h3></span>
+      </a>
+    </li>
+    <li>
+    <a href="portfolio-item-two.html">
+  <img src="img/thumbnail-2.png" />
+  <span class="text-content"><h3>Logo Study</h3></span>
+  </a>
+</li>
+<li>
+<a href="portfolio-item-three.html">
+<img src="img/thumbnail-3.png" />
+<span class="text-content"><h3>Magazine Cover</h3></span>
+</a>
+</li>
+<li>
+<a href="portfolio-item-four.html">
+<img src="img/thumbnail-4.png" />
+<span class="text-content"><h3>Time Posters</h3></span>
+</a>
+</li>
+    </ul>
+</div>
   </section>
 <!-- End of Section -->
 <!-- Section Three: About -->
-  <section  class="content s3-content clear">
-    <div class ="container">
-              <div class="item-left">
-              <img src="img/img-about.jpg" alt="Avatar">
-            </div>
-            <article class="s3-text">
-              <h2>About Me</h2>
-              <p>I’m a graphic designer, photographer, and caffeine lover currently living in Toronto. I’m currently a full time student in the York University/Sheridan College Bachelor of Design Honours Program. I've loved art and design since I was little. I adore functional design and my work reflects that. When I'm not creating things you'll probably find me running or reading a book with a fresh cup of tea, earl gray, hot. </p><p> If you’d like to get in touch you can reach me at {insert@emailhere.com}</p>
-            </article>
-      </div>
-    <svg  id="about" viewBox="0 0 2400 725" preserveAspectRatio="xMinYMid slice"><path fill="#f3f3f3" d="M0 0 l2400 65 v625 l-2400 -65 Z"></svg>
-  </section>
+  <section id="about">
+  <ul  class="s3-content">
+    <li>
+    <img src="img/about.png" style="height: 525px; width: 100%; z-index: 9; position: relative; pointer-events: none;">
+    <span class="s3-text-content"><article class="s3-text-box"><img src="img/img-about.jpg" style="border-radius: 100%"><h2>About Me</h2>
+    <p>I’m a canadian graphic designer, photographer, and caffeine lover. I’m a full time student in the York University/Sheridan College Bachelor of Design Program. I adore functional design and my work reflects that. When I'm not creating things you'll probably find me running or reading a book with a fresh cup of tea, earl gray, hot. </p><p> If you’d like to get in touch you can reach me at {insert@emailhere.com}</p></article></span>
+  </li>
+  </ul>
+</section>
   <!-- End of Section -->
   <!-- Section Four: YSDN 1006 Work-->
-  <section id="extras" class="content s4-content clear">
-    <div class ="container push">
+  <section id="extras" class="s4-content">
+    <div class="container">
       <!-- Section Four: Item 1 -->
-          <a href="word-generator.html">
-            <div class="s4-item item-left">
-              <img src="img/thumbnail-5.png" title="Click to see more!" style="width:100%">
-              <div class="s4-text">
-                <p>Word of the Minute App</p>
-              </div>
-            </div>
-          </a>
-          <!-- Section Four: Item 2 -->
-          <a href="exercises/exA_PMarier.html">
-            <div class="s4-item item-right">
-              <img src="img/thumbnail-6.png" title="Click to see more!" style="width:100%">
-              <div class="s4-text">
-                <p>Exercise A</p>
-              </div>
-            </div>
-          </a>
-          <!-- Section Four: Item 3 -->
-          <a href="exercises/exB_PMarier.html">
-            <div class="s4-item clear item-left">
-              <img src="img/thumbnail-7.png" title="Click to see more!" style="width:100%">
-              <div class="s4-text">
-                <p>Exercise B</p>
-              </div>
-            </div>
-          </a>
-          <!-- Section Four: Item 4 -->
-          <a href="project-1/tea-page-one.html">
-          <div class="s4-item item-right">
-            <img src="img/thumbnail-8.png" title="lorem ipsum" style="width:100%">
-            <div class="s4-text">
-              <p>Project One</p>
-            </div>
-          </div>
-          </a>
-          <!-- Section Four: Item 5 -->
-          <a href="#">
-            <div class="s4-item clear item-left">
-              <img src="http://via.placeholder.com/400x200" title="Click to see more!" style="width:100%">
-              <div class="s4-text">
-                <p>Lorem Ipsum</p>
-              </div>
-            </div>
-          </a>
-          <!-- Section Four: Item 6 -->
-            <a href="#">
-          <div class="s4-item item-right">
-            <img src="http://via.placeholder.com/400x200" title="lorem ipsum" style="width:100%">
-            <div class="s4-text">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          </a>
-    </div>
+      <ul class="s4-img-list">
+        <br>
+      <li>
+      <a href="word-generator.html">
+    <img src="img/thumbnail-5.png"/>
+    <span class="s4-text-content"><p>WORD OF THE MINUTE APP</p></span>
+    </a>
+    </li>
+    <li>
+    <a href="exercises/exA_PMarier.html">
+    <img src="img/thumbnail-6.png"/>
+    <span class="s4-text-content"><p>EXCERCISE A</p></span>
+    </a>
+    </li>
+    <li>
+    <a href="exercises/exB_PMarier.html">
+    <img src="img/thumbnail-7.png"/>
+    <span class="s4-text-content"><p>EXERCISE B</p></span>
+    </a>
+    </li>
+    <li>
+    <a href="project-1/tea-page-one.html">
+    <img src="img/thumbnail-8.png"/>
+    <span class="s4-text-content"><p>PROJECT ONE</p></span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <img src="http://via.placeholder.com/400x200"/>
+    <span class="s4-text-content"><p>Lorem Ipsum</p></span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <img src="http://via.placeholder.com/400x200"/>
+    <span class="s4-text-content"><p>Lorem Ipsum</p></span>
+    </a>
+    </li>
+    </ul>
+</div>
   </section>
   <footer class="content section-footer clear">
     <div class ="container">
