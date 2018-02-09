@@ -39,24 +39,24 @@ nav {
 } .nav-shrink .lg-nav-intro h1{
   font-size: 24px;
   letter-spacing: 1px;
-  margin-top: -4px;
+  margin-top: -162px;
 }
-
+nav .nav-visible {
+  width: 80%;
+  margin: 0 auto;
+}
 nav .lg-nav-intro {
-  position: absolute;
+  float:left;
   width: 74%;
-  height: 20%;
-  left: 12%;
-  right: 12%;
-  top: 40%;
-  bottom: 40%;
+  margin: 175px 0 175px 0;
+  height: 50px;
 } nav .lg-nav-intro h1 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
   margin-left: -3px;
   padding-bottom: 0;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 } nav .lg-nav-intro h2 {
   font-weight: 300;
   font-size: 18px;
@@ -72,9 +72,7 @@ nav .lg-nav-intro {
   z-index: 20;
 }
 #nav-open {
-  position: absolute;
-  top: 2%;
-  right: 2%;
+  float: right;
   font-size: 40px;
   color: #F9F9F9;
 }
@@ -162,14 +160,11 @@ html.noscroll {
 /**   Responsive Bits n' Knobs    **/
 @media only screen and (min-width: 480px) {
   nav .lg-nav-intro {
-    width: 80%;
-    height: 25%;
-    left: 10%;
-    right: 10%;
-    top: 37.5%;
-    bottom: 37.5%;
+    width: 85%;
+    margin: 166px 0 166px 0;
+    height: 68px;
   } nav .lg-nav-intro h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     color: #fff;
     margin-left: -3px;
@@ -177,19 +172,19 @@ html.noscroll {
     letter-spacing: 4px;
   } nav .lg-nav-intro h2 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     letter-spacing: 3.5px;
-  }  .lg-nav-mute {display: none;}
+  }
+  .nav-shrink .lg-nav-intro h1{
+    margin-top: -152px;
+  } .lg-nav-mute {display: none;}
 }
 @media only screen and (min-width: 768px) {
   nav .lg-nav-intro {
-    width: 80%;
-    height: 25%;
-    left: 10%;
-    right: 10%;
-    top: 37.5%;
-    bottom: 37.5%;
+    width: 85%;
+    margin: 144px 0 144px 0;
+    height: 112px;
   } nav .lg-nav-intro h1 {
     font-size: 48px;
     font-weight: 700;
@@ -199,21 +194,23 @@ html.noscroll {
     letter-spacing: 4px;
   } nav .lg-nav-intro h2 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     letter-spacing: 3.5px;
   }  .lg-nav-mute {display: initial;}
+  .nav-shrink .lg-nav-intro h1{
+    margin-top: -128px;
+  }
 }
 @media only screen and (min-width: 960px) {
-  nav .lg-nav-intro {
-    width: 54%;
-    height: 40%;
-    left: 23%;
-    right: 23%;
-    top: 30%;
-    bottom: 30%;
+  nav .nav-visible {
+    width: 940px;
   }
-  nav .lg-nav-intro h1 {
+  nav .lg-nav-intro {
+    width: 90%;
+    margin: 131px 0 131px 2%;
+    height: 138px;
+  } nav .lg-nav-intro h1 {
     font-size: 64px;
     font-weight: 700;
     color: #fff;
@@ -226,17 +223,11 @@ html.noscroll {
     color: #fff;
     letter-spacing: 3.5px;
   }  .lg-nav-mute {display: initial;}
+  .nav-shrink .lg-nav-intro h1{
+    margin-top: -118px;
+  }
   .container {
     width: 80%;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  #nav-open {
-    position: absolute;
-    top: 2%;
-    right: 25%;
-    font-size: 40px;
-    color: #F9F9F9;
   }
 }
 @media only screen and (min-width: 768px) {
