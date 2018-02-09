@@ -26,9 +26,9 @@ nav {
   background-size: cover;
   background-image: url("../img/Bitmap.png");
   background-color: #ff9a9e;
-  transition: all 0.75s ease-in-out;
--webkit-transition: all 0.75s ease-in-out;
--moz-transition: all 0.75s ease-in-out ;
+  transition: all 0.45s ease-in-out;
+-webkit-transition: all 0.45s ease-in-out;
+-moz-transition: all 0.45s ease-in-out ;
 }
 .nav-shrink {
   height: 56px;
@@ -39,30 +39,30 @@ nav {
 } .nav-shrink .lg-nav-intro h1{
   font-size: 24px;
   letter-spacing: 1px;
-  margin-top: -4px; 
+  margin-top: -4px;
 }
 
 nav .lg-nav-intro {
   position: absolute;
-  width: 45%;
-  height: 40%;
-  left: 27.5%;
-  right: 27.5%;
-  top: 30%;
-  bottom: 30%;
+  width: 74%;
+  height: 20%;
+  left: 12%;
+  right: 12%;
+  top: 40%;
+  bottom: 40%;
 } nav .lg-nav-intro h1 {
-  font-size: 64px;
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
   margin-left: -3px;
   padding-bottom: 0;
-  letter-spacing: 8.12px;
+  letter-spacing: 4px;
 } nav .lg-nav-intro h2 {
   font-weight: 300;
-  font-size: 20px;
-  color: #F9F9F9;
-  letter-spacing: 3.5px;
-}
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+} .lg-nav-mute {display: none;}
 #to-top {
   display: none;
   position: fixed;
@@ -74,7 +74,7 @@ nav .lg-nav-intro {
 #nav-open {
   position: absolute;
   top: 2%;
-  right: 25%;
+  right: 2%;
   font-size: 40px;
   color: #F9F9F9;
 }
@@ -138,6 +138,9 @@ html.noscroll {
 .container {
   width: 90%;
   margin: 0 auto;
+  transition: padding 0.50s ease-in-out;
+-webkit-transition: padding 0.50s ease-in-out;
+-moz-transition: padding 0.50s ease-in-out ;
   padding-top: 400px;
 }
 .row {
@@ -157,9 +160,83 @@ html.noscroll {
 }
 
 /**   Responsive Bits n' Knobs    **/
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 480px) {
+  nav .lg-nav-intro {
+    width: 80%;
+    height: 25%;
+    left: 10%;
+    right: 10%;
+    top: 37.5%;
+    bottom: 37.5%;
+  } nav .lg-nav-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: -3px;
+    padding-bottom: 0;
+    letter-spacing: 4px;
+  } nav .lg-nav-intro h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3.5px;
+  }  .lg-nav-mute {display: none;}
+}
+@media only screen and (min-width: 768px) {
+  nav .lg-nav-intro {
+    width: 80%;
+    height: 25%;
+    left: 10%;
+    right: 10%;
+    top: 37.5%;
+    bottom: 37.5%;
+  } nav .lg-nav-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: -3px;
+    padding-bottom: 0;
+    letter-spacing: 4px;
+  } nav .lg-nav-intro h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3.5px;
+  }  .lg-nav-mute {display: initial;}
+}
+@media only screen and (min-width: 960px) {
+  nav .lg-nav-intro {
+    width: 54%;
+    height: 40%;
+    left: 23%;
+    right: 23%;
+    top: 30%;
+    bottom: 30%;
+  }
+  nav .lg-nav-intro h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: -3px;
+    padding-bottom: 0;
+    letter-spacing: 8.12px;
+  } nav .lg-nav-intro h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3.5px;
+  }  .lg-nav-mute {display: initial;}
   .container {
     width: 80%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #nav-open {
+    position: absolute;
+    top: 2%;
+    right: 25%;
+    font-size: 40px;
+    color: #F9F9F9;
   }
 }
 @media only screen and (min-width: 768px) {

@@ -6,7 +6,7 @@ $("a").on('click', function(event) { // when an anchor is clicked.
         event.preventDefault();
         var hash = this.hash; // the variable hash is set to the link.
 
-        $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
             window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
         });
     }
@@ -16,13 +16,23 @@ $(document).on("scroll", function(){
   if
     ($(document).scrollTop() > 25){
     $("nav").addClass("nav-shrink");
-    $("nav").css("transition", "all 0.25s ease-out");
-    $( ".container" ).css( "padding-top", "165px" );
+    $("nav").css("transition", "all 0.45s ease-out");
+    $("nav").css("-webkit-transition", "all 0.45s ease-out");
+    $("nav").css("-moz-transition", "all 0.45s ease-out");
+    $( ".container" ).css("transition", "padding 0.5s ease-in-out");
+    $( ".container" ).css("-webkit-transition", "padding 0.5s ease-in-out");
+    $( ".container" ).css("-moz-transition", "padding 0.5s ease-in-out");
+    $( ".container" ).css( "padding-top", "156px" );
   }
   else
   {
     $("nav").removeClass("nav-shrink");
-    $("nav").css("transition", "all 0.55s ease-in-out");
+    $("nav").css("transition", "all 0.5s ease-in-out");
+    $("nav").css("-webkit-transition", "all 0.5s ease-out");
+    $("nav").css("-moz-transition", "all 0.5s ease-out");
+    $( ".container" ).css("transition", "padding 0.55s ease-in-out");
+    $( ".container" ).css("-webkit-transition", "padding 0.55s ease-in-out");
+    $( ".container" ).css("-moz-transition", "padding 0.55s ease-in-out");
     $( ".container" ).css( "padding-top", "400px" );
   }
 });
@@ -46,6 +56,6 @@ $(document).ready(function(){
 var windowHeight = $(window).height();
 
 $(document).scroll(function() {
-    $('#to-top').toggle($(this).scrollTop() > (windowHeight / 4));
+    $('#to-top').toggle($(this).scrollTop() > 35);
 });
 });
