@@ -5,7 +5,7 @@ A lightweight portfolio website made for YSDN1006. [Live Demo](http://design.she
 
 * Smooth Scrolling
 * CSS Animated Item Containers
-* 2.5D Interface
+* Full Viewport Navigation Pane
 
 ## To-do
 
@@ -16,7 +16,7 @@ A lightweight portfolio website made for YSDN1006. [Live Demo](http://design.she
 * Better Typography
 * WCAG 2.0 AA Compliance Check
 * Portfolio Item Alt text
-* Side Nav Buttons (?)
+* Shrinking Nav on Scroll
 * Clean up the main page's class, id, and file naming convention
 
 ## License Info

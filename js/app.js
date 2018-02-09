@@ -12,6 +12,21 @@ $("a").on('click', function(event) { // when an anchor is clicked.
     }
 });
 
+$(document).on("scroll", function(){
+  if
+    ($(document).scrollTop() > 25){
+    $("nav").addClass("nav-shrink");
+    $("nav").css("transition", "all 0.45s ease-out");
+    $( ".container" ).css( "padding-top", "165px" );
+  }
+  else
+  {
+    $("nav").removeClass("nav-shrink");
+    $("nav").css("transition", "all 0.75s ease-in-out");
+    $( ".container" ).css( "padding-top", "400px" );
+  }
+});
+
 $(document).ready(function(){
       // super sexy nav fade in and out
   $('#nav-close').click(function() {
