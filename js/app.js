@@ -16,13 +16,13 @@ $(document).on("scroll", function(){
   if
     ($(document).scrollTop() > 25){
     $("nav").addClass("nav-shrink");
-    $("nav").css("transition", "all 0.45s ease-out");
+    $("nav").css("transition", "all 0.25s ease-out");
     $( ".container" ).css( "padding-top", "165px" );
   }
   else
   {
     $("nav").removeClass("nav-shrink");
-    $("nav").css("transition", "all 0.75s ease-in-out");
+    $("nav").css("transition", "all 0.55s ease-in-out");
     $( ".container" ).css( "padding-top", "400px" );
   }
 });
