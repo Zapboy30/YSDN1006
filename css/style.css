@@ -102,11 +102,7 @@ nav {
   font-size: 40px;
   color: #F9F9F9;
 }
-html.noscroll {
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-}
+
 #nav-overlay {
   display: none;
   height: 100%;

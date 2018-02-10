@@ -65,15 +65,10 @@ $(document).ready(function(){
       // super sexy nav fade in and out
   $('#nav-close').click(function() {
       $("#nav-overlay").fadeOut(500);
-      var scrollTop = parseInt($('html').css('top'));
-      $('html').removeClass('noscroll'); //enables verticle scrolling
-      $('html,body').scrollTop(-scrollTop);
   });
 
   $('#nav-open').click(function() {
       $("#nav-overlay").fadeIn(1000);
-      var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); //disables verticle scrolling
-     $('html').addClass('noscroll').css('top',-scrollTop);
   });
 
 //super sassy back to top button
