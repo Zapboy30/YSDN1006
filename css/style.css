@@ -73,6 +73,9 @@ nav {
   width: 74%;
   margin: 175px 0 175px 0;
   height: 50px;
+  transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
 }
 .lg-nav-intro h1 {
   font-size: 26px;
@@ -400,6 +403,7 @@ padding-bottom: 88px;
   font-family: "Merriweather";
   font-style: italic;
   text-decoration: none;
+  color: #752b70;
 } div.about-end-image {
   clear: both;
   position: relative;
