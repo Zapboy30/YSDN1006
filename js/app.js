@@ -33,8 +33,8 @@ $(document).on("scroll", function(){
   {
     $("nav").removeClass("nav-shrink");
     $("nav").css("transition", "all 0.55s ease-in-out");
-    $("nav").css("-webkit-transition", "all 0.55s ease-out");
-    $("nav").css("-moz-transition", "all 0.55s ease-out");
+    $("nav").css("-webkit-transition", "all 0.55s ease-in-out");
+    $("nav").css("-moz-transition", "all 0.55s ease-in-out");
     $( ".container" ).css("transition", "padding 0.5s ease-in-out");
     $( ".container" ).css("-webkit-transition", "padding 0.5s ease-in-out");
     $( ".container" ).css("-moz-transition", "padding 0.5s ease-in-out");
