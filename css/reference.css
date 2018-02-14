@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:300,400,700');
+
+font-family: 'Open Sans', sans serif;
+font-family: 'Lora', serif;
+
+* {
+}
+
+body {
+font-family: 'Lora', Helvetica, Arial, sans-serif;
+margin: 0;
+font-size: 18px;
+}
+
+
+#container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+}
+
+
+a {
+color: #232323;
+text-decoration: none;
+line-height: 24px;
+}
+
+
+a:hover, a:focus, a:active {
+color: red;
+text-decoration: none;
+}
+
+
+#masthead {
+	margin: 115px 0 115px 0;
+}
+
+header {
+font-size: 48px;
+font-family: Helvetica, sans-serif;
+color: #000;
+font-weight: 700;
+text-align: center;
+}
+
+#subheader {
+	margin: -32px 0 0 500px;
+	position: relative;
+	font-weight: bold;
+	font-family: 'Lora';
+	font-size: 18px;
+	text-align: center;
+	color: #BD1550;
+	text-shadow: 1px 1px 0 #bcbcbc, 3px 3px 0 #9c9c9c;
+	animation: subheader .60s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes subheader {
+	0% {
+		transform: scale(0.85) rotate(-24deg);
+	}
+	65% {
+		transform: scale(1.1) rotate(-24deg);
+	}
+	100% {
+		transform: scale(1) rotate(-24deg);
+	}
+}
+
+section h3 {
+	margin-top: 20px;
+	font-family: Helvetica;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+}
+section p {
+	margin-top: -15px;
+	padding-bottom: 22px;
+	font-family: 'Lora';
+	font-size: 18px;
+	line-height: 28px;
+	color: #2d2d2d;
+}
+
+footer {
+font-size: 11px;
+font-family: 'Lora';
+color: #c0c0c0;
+margin: 5px 0 5px 0;
+text-align: center;
+}
