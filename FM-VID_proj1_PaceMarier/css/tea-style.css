@@ -1,8 +1,8 @@
 /**  Utah Teapot Wikipedia Pg Redesign  **/
 /** YSDN 1006 Visual Interactive Design **/
 /**  This Website is WCAG 2.0 Compliant **/
-/***************************************/
-/***** Import Halcyon Bold For Logo  *****/
+
+/* Import the font Halcyon Bold for the site wordmark */
 @font-face {
     font-family: 'Halcyon-Bold';
     src: url('../fonts/Halcyon-Bold.eot');
@@ -28,6 +28,7 @@ a {
 a:hover, a:active {
   color: #2a7ab0;
 }
+/* Main content container */
 .container {
 position: relative;
 margin: 0 auto;
@@ -37,12 +38,14 @@ padding-bottom: 45px;
 background: #fff;
 box-shadow: 0 2px 6px 1px rgba(0,0,0,0.27);
 }
+/* Body Text Container */
 .container-content {
   position: relative;
   width: 634px;
   margin-left: auto;
   margin-right: auto;
 }
+/* Mobile layout for the content containers */
 @media only screen and (max-width: 960px) {
     body, html {
         background-color: #fff;
@@ -57,23 +60,34 @@ box-shadow: 0 2px 6px 1px rgba(0,0,0,0.27);
 }
 /*********** END OF SECTION ***********/
 /***********  Navigation Styles ***********/
+/* Navigation container */
 nav {
   height: 70px;
   padding-top: 72px;
   border-bottom: 2px #000 solid;
 }
-/** Logo Styles **/
+/* Wordmark location and size */
 nav header {
   font-family: "Halcyon-Bold", Helvetica, sans-serif;
   float: left;
   width: 50%;
   height: 70px;
 }
+nav header a {
+  text-decoration: none;
+  color: #000;
+}
+nav header a:hover {
+  text-decoration: none;
+  color: #444;
+}
+/* "Utah Teapot" wordmark text */
 nav  h1 {
   font-family: Halcyon-Bold;
   font-size: 2.0625em;
   margin: -5px 0 0 0;
 }
+/* "The" wordmark text */
 nav h3 {
   font-family: Halcyon-Bold;
   font-size: 1.625em;
@@ -91,7 +105,7 @@ nav  ul {
   line-height: 95px;
   padding: 0;
   margin: 0;
-  letter-spacing: 4.91px;
+  letter-spacing: 1px;
 }
 nav  li { display: inline;}
 nav li a, footer li a {
@@ -112,6 +126,7 @@ nav li a, footer li a {
   -ms-user-select: none;
   user-select: none;
 }
+/* Mobile layout for the Navigation (for viewports >700px wide)*/
 @media only screen and (max-width: 700px) {
   nav {
     height: 140px;
@@ -134,6 +149,7 @@ nav li a, footer li a {
     text-align: center;
   }
 }
+/* Mobile layout for the Navigation (for viewports >378px wide)*/
 @media only screen and (max-width: 378px) {
   nav {
     height: 120px;
@@ -160,7 +176,7 @@ nav li a, footer li a {
 }
 /*********** END OF SECTION ***********/
 /************* Article Styling  ************/
-/** Section Headers **/
+/** Article Section Headers **/
 article h3 {
 font-family: 'Open Sans', sans-serif;
 font-size: 1.25em;
@@ -171,44 +187,49 @@ padding: 0;
 margin-top: 32px;
 margin-bottom: -26px;
 }
-/** Article Text **/
+/** Article Body Text **/
 article p {
 margin-top: 32px;
 font-size: 1.125em;
 line-height: 33.1833px
 }
-/** Page Images **/
+/** Article Images **/
+/* sets the image container to the main container width */
 figure {
   width: 960px;
   margin: 0;
 }
-figure img.page-one-image {
+/* index.html image - covers the entire width of the main container */
+figure img.page-one-image { /* change class name */
   margin-top: 28px;
   width: 100%;
   height: auto;
 }
-figure img.page-two-image {
+figure img.page-two-image { /* repeated class - remove */
   margin-top: 28px;
   width: 100%;
   height: auto;
 }
-figure img.page-two-image-lg {
+figure img.page-two-image-lg { /* repeated class - remove */
   margin-top: 28px;
   width: 100%;
   height: auto;
 }
+/* history.html small image left*/
 figure img.page-two-image-sm-1 {
   margin-top: 15px;
   float: left;
   width: 470px;
   height: 308px;
 }
+/* history.html small image right*/
 figure img.page-two-image-sm-2 {
   float: right;
   margin-top: 15px;
   width: 470px;
   height: 308px;
 }
+/* appearances.html image one - slightly wider than the width of the text container */
 figure img.page-three-image-lg {
   display: block;
   margin-left:auto;
@@ -217,22 +238,26 @@ figure img.page-three-image-lg {
   width: 678px;
   align: center;
 }
+/* appearances.html image two and three container */
 .page-three-figure-sm {
   width: 678px;
   margin: 0 auto;
 }
+/* appearances.html image two */
 figure img.page-three-image-sm-1 {
   margin-top: 15px;
   float: left;
   width: 408px;
   height: 435px;
 }
+/* appearances.html image three */
 figure img.page-three-image-sm-2 {
   float: right;
   margin-top: 15px;
   width: 246px;
   height: 435px;
 }
+/* image description and citations */
 figure .img-citation {
   padding-top: 5px;
   clear: both;
@@ -314,3 +339,4 @@ footer  li { display: inline;}
 
 }
 /*********** END OF SECTION ***********/
+/*********  END OF DOCUMENT  *********/

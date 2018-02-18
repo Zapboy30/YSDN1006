@@ -12,12 +12,18 @@ A lightweight portfolio website made for YSDN1006. [Live Demo](http://design.she
 ## To-do
 
 * Convert font-size from px units to em units
-* Portfolio Page Layouts (wireframe in Sketch first)
-* Add Process Site / Teapot Site design Methodology Pages
-* Better Typography
-* WCAG 2.0 AA Compliance Check
-* Portfolio Item Alt text
+* Portfolio Page (Convert Sketch wireframe to HTML)
+* Wikipedia Process Page (Rationale, Sketches, Archived Iterations)
+* Process Site Portfolio Page (Rationale, Sketches, Archived Iterations)
+* Project Two Portfolio Page (Rationale, Sketches, Archived Iterations)
+* Update Portfolio Item Grid
+* Portfolio Item alt text
+* Portfolio Item typography
+* About Page cutline scales with page
+* Smaller masthead on Mobile
+* About page bottom image scales with page
 * Clean up the main page's class, id, and file naming convention
+* WCAG 2.0 AA Compliance Check
 
 ## License Info
 This website is covered under the [CC BY-NC_SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
