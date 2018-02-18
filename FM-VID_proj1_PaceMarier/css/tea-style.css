@@ -200,37 +200,27 @@ figure {
   margin: 0;
 }
 /* index.html image - covers the entire width of the main container */
-figure img.page-one-image { /* change class name */
-  margin-top: 28px;
-  width: 100%;
-  height: auto;
-}
-figure img.page-two-image { /* repeated class - remove */
-  margin-top: 28px;
-  width: 100%;
-  height: auto;
-}
-figure img.page-two-image-lg { /* repeated class - remove */
+figure img.large-image {
   margin-top: 28px;
   width: 100%;
   height: auto;
 }
 /* history.html small image left*/
-figure img.page-two-image-sm-1 {
+figure img.history-image-sm-1 {
   margin-top: 15px;
   float: left;
   width: 470px;
   height: 308px;
 }
 /* history.html small image right*/
-figure img.page-two-image-sm-2 {
+figure img.history-image-sm-2 {
   float: right;
   margin-top: 15px;
   width: 470px;
   height: 308px;
 }
 /* appearances.html image one - slightly wider than the width of the text container */
-figure img.page-three-image-lg {
+figure img.appearances-image-lg {
   display: block;
   margin-left:auto;
   margin-right: auto;
@@ -239,26 +229,26 @@ figure img.page-three-image-lg {
   align: center;
 }
 /* appearances.html image two and three container */
-.page-three-figure-sm {
+.appearances-figure-cut {
   width: 678px;
   margin: 0 auto;
 }
 /* appearances.html image two */
-figure img.page-three-image-sm-1 {
+figure img.appearances-image-cut-1 {
   margin-top: 15px;
   float: left;
   width: 408px;
   height: 435px;
 }
 /* appearances.html image three */
-figure img.page-three-image-sm-2 {
+figure img.appearances-image-cut-2 {
   float: right;
   margin-top: 15px;
   width: 246px;
   height: 435px;
 }
 /* image description and citations */
-figure .img-citation {
+figure .image-citation {
   padding-top: 5px;
   clear: both;
   font-size: 0.75em;
@@ -266,7 +256,7 @@ figure .img-citation {
   margin: 0 auto;
   width: 634px;
   text-align: center;
-} figure .page-one-img-citation {
+} figure .large-image-citation {
   clear: both;
   font-size: 0.75em;
   color: #464646;
@@ -278,28 +268,21 @@ figure .img-citation {
   figure {
     width: 100%;
   }
-  figure .img-citation, figure .page-one-img-citation {
+  figure .image-citation, figure .large-image-citation {
     width: 80%;
   }
-  figure img.page-two-image-sm-1 {
+  figure img.history-image-sm-1,   figure img.history-image-sm-2 {
     width: 49%;
     height: auto;
   }
-  figure img.page-two-image-sm-2 {
-    width: 49%;
-    height: auto;
-  }
-  figure img.page-three-image-lg {
+  figure img.appearances-image-lg,   .appearances-figure-cut  {
     width: 90%;
   }
-  .page-three-figure-sm {
-    width: 90%;
-  }
-  figure img.page-three-image-sm-1 {
+  figure img.appearances-image-cut-1 {
     width: 60%;
     height: auto;
   }
-  figure img.page-three-image-sm-2 {
+  figure img.appearances-image-cut-2 {
     width: 36%;
     height: auto;
   }
