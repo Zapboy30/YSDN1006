@@ -542,9 +542,10 @@ padding-bottom: 88px;
   text-decoration: none;
   color: #752b70;
 }
-.column-half img {
+.portfolio-container img {
+  border: 1px solid #eee;
   opacity: 1;
 }
-.column-half img:hover {
+.portfolio-container img:hover {
   opacity: 0.75;
 }
