@@ -1,0 +1,141 @@
+/*  Style sheet - Enter name and notes here */
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:300,400,700');
+
+font-family: 'Open Sans', sans serif;
+font-family: 'Lora', serif;
+
+/* From http://green-beast.com/blog/?p=109
+  The star selector is used to target every element.  This is
+  often used to zero out the margin and padding.  This
+  creates some common ground from which to begin.
+*/
+* {
+}
+
+/*
+  body is used to provide basic page styles meant to be inherited
+  by nearly all of the page’s children: font-face, size, alignment,
+  etc. Some use the html selector, but I have never done that so
+  it’s not listed.
+*/
+body {
+font-family: 'Lora', Helvetica, Arial, sans-serif;
+margin: 0;
+}
+
+/*
+  The wrapper div can be used to contain the page itself. It can
+  also redefine some characteristics inherited from the body. It
+  is high on this page as it’ll contain everything else used.
+*/
+#container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+}
+
+
+/*
+  Most pages will have links. Let’s style them using a anchor
+  element. Some will write this as a:link. I don’t — I don’t
+  see the need
+*/
+a {
+color: #fff;
+text-decoration: none;
+}
+
+/*
+  Links really should have some interactivity characteristics for
+  accessibility and usability reasons. The a:hover pseudo-class is
+  offered as is a:focus. Internet Explorer (IE) doesn’t support
+  a:focus, but it does use the a:active state so it’s here too.
+*/
+a:hover, a:focus, a:active {
+color: red;
+text-decoration: none;
+}
+
+/*
+  Focus/active should be different than hover is some regards, such
+  as providing a background color to make it highly visible to
+  keyboard users. Thus, certain focal styles may be redefined.
+*/
+
+a:focus, a:active {
+}
+
+/*
+  In addition to background images, most web pages will offer
+  embedded images (img), so I will offer them here. Mostly this
+  is used to remove borders and text-decoration
+  (if the image is a link).
+*/
+img, a img {
+}
+
+nav {
+	margin-top: -115px;
+	position: fixed;
+	width: 100%;
+	height: 35px;
+	background-color: black;
+	z-index: 100;
+}
+nav ul {
+	list-style-type: none;
+	padding-top: 6px;
+	text-align: center;
+}
+nav li {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	padding-right: 27px;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+#masthead {
+	margin: 115px 0 115px 0;
+}
+
+header {
+font-size: 60px;
+font-family: 'Open Sans';
+font-weight: 700;
+text-align: center;
+}
+
+article {
+	font-family: 'Lora';
+	font-size: 24px;
+	text-align: center;
+	color: #565656;
+}
+
+section h3 {
+	margin-top: 45px;
+	font-family: 'Open Sans';
+	font-size: 38px;
+	font-weight: 700;
+}
+section p {
+	margin-top: -15px;
+	padding-bottom: 22px;
+	font-family: 'Lora';
+	font-size: 18px;
+	line-height: 28px;
+	color: #2d2d2d;
+}
+
+footer {
+font-size: 11px;
+font-family: 'Lora';
+color: #c0c0c0;
+margin: 5px 0 5px 0;
+text-align: center;
+}
