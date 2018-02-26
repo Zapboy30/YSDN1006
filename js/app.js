@@ -64,11 +64,11 @@ $(document).ready(function(){
 
       // super sexy nav fade in and out
   $('#nav-close').click(function() {
-      $("#nav-overlay").fadeOut(500);
+      $("#nav-overlay").fadeOut(200);
   });
 
   $('#nav-open').click(function() {
-      $("#nav-overlay").fadeIn(1000);
+      $("#nav-overlay").fadeIn(500);
   });
 
 //super sassy back to top button
