@@ -562,10 +562,23 @@ padding-bottom: 88px;
   text-decoration: none;
   color: #752b70;
 }
-.portfolio-container img {
+.img-hover img {
   border: 1px solid #eee;
   opacity: 1;
 }
-.portfolio-container img:hover {
+.img-hover-off img {
+ margin-bottom: 100px;
+}
+.img-hover img:hover {
   opacity: 0.75;
+}
+.logo-one-cover-image {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/logo-cover-image.jpg");
+  background-color: #f2f2f2;
+  min-height: 100%;
 }
