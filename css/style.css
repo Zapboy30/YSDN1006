@@ -405,7 +405,7 @@ footer div {
   background-color: #f3f3f3;
 }
 
-.portfolio-preview:hover .portfolio-preview-hover {
+.portfolio-preview:hover .portfolio-preview-textbox {
   opacity: 0.95;
 }
 .exercise-preview:hover {
