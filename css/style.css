@@ -493,14 +493,16 @@ padding-bottom: 88px;
   box-shadow: 0 2px 4px -2px rgba(0,0,0,0.50);
   background-color: #ff9a9e;
 }
-.nav-small .nav-visible header h1{
+.nav-small .nav-visible h1{
   font-size: 24px;
   font-family: "Isidora Semi";
   letter-spacing: 2px;
-  margin-top: -118px;
   color: #fff;
+  margin-top: 14px;
 }
-
+.nav-small .nav-visible #nav-open {
+  margin-top: -48px;
+}
 .project-one-cover-image {
   position: relative;
   background-attachment: fixed;
