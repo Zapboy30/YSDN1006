@@ -27,7 +27,7 @@ $(document).on("scroll", function(){
     $( ".container" ).css("-webkit-transition", "padding 0.5s ease-in-out");
     $( ".container" ).css("-moz-transition", "padding 0.5s ease-in-out");
     $( ".container" ).css( "padding-top", "156px" );
-    $( ".lg-nav-intro" ).css( "margin", "0" );
+    $( "header" ).css( "margin", "0" );
   }
   else
   {
@@ -43,17 +43,17 @@ $(document).on("scroll", function(){
 
 
 	       if ( widthNav < 480 ){
-           $( ".lg-nav-intro" ).css( "margin", "175px 0 175px 0" );
-           $( ".lg-nav-intro" ).css( "height", "50px" );
+           $( "header" ).css( "margin", "175px 0 175px 0" );
+           $( "header" ).css( "height", "50px" );
 	    } if (widthNav < 768 && widthNav > 480){
-        $( ".lg-nav-intro" ).css( "margin", "166px 0 166px 0" );
-        $( ".lg-nav-intro" ).css( "height", "68px" );
+        $( "header" ).css( "margin", "166px 0 166px 0" );
+        $( "header" ).css( "height", "68px" );
       } if (widthNav < 960 && widthNav > 768){
-        $( ".lg-nav-intro" ).css( "margin", "146px 0 146px 0" );
-        $( ".lg-nav-intro" ).css( "height", "108px" );
+        $( "header" ).css( "margin", "146px 0 146px 0" );
+        $( "header" ).css( "height", "108px" );
       }	else if (widthNav > 960){
-        $( ".lg-nav-intro" ).css( "margin", "131px 0 131px 2%" );
-        $( ".lg-nav-intro" ).css( "height", "138px" );
+        $( "header" ).css( "margin", "131px 0 131px 2%" );
+        $( "header" ).css( "height", "138px" );
  }
 
 
