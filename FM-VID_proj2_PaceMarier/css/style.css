@@ -1,0 +1,505 @@
+html, body {
+  margin: 0;
+  font-family: 'Avenir Next', Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+/** Universal CSS Styles **/
+a {
+  text-decoration: none;
+  color: #000;
+  transition:all linear 0.15s;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color:#D3145A;
+}
+h1 {
+font-size: 2.5em;
+letter-spacing: 4px;
+margin-bottom: 0;
+}
+p {
+letter-spacing: 0.22px;
+line-height: 34px;
+}
+/** Header & Menu CSS **/
+header {
+  width: 100%;
+  height: 155px;
+}
+.menu li {
+	margin:0px;
+	list-style:none;
+}
+.menu a {
+	transition:all linear 0.15s;
+	color:#000;
+}
+.menu li:hover > a, .menu .current-item > a, header .current-item-cart {
+	text-decoration:none;
+	color:#D3145A;
+}
+.menu > ul > li {
+	float:left;
+	display:inline-block;
+	position:relative;
+	font-size: 0.75em;
+}
+.menu > ul > li > a {
+	padding:10px 20px;
+	display:inline-block;
+  text-decoration: none;
+}
+.menu li:hover .sub-menu, .menu li:hover .sub-menu .sub-menu-items {
+	z-index:100;
+	opacity:1;
+}
+.sub-menu {
+  position: absolute;
+  width: 100vw;
+  height: 45px;
+  top: 100%;
+  left: -76.55px;
+
+  border-top: 1px dashed #eee;
+  background:#fff !important;
+  z-index:-1;
+  opacity:0;
+  	transition:opacity linear 0.15s;
+}
+.sub-menu-items {
+  width: 470px;
+	padding:5px 0px;
+	position:absolute;
+	z-index:-1;
+	opacity:0;
+  left: 50%;
+  margin-left: -235px;
+	transition:opacity linear 0.15s;
+}
+blockquote {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.875em;
+}
+.sub-menu li {
+	display:inline-block;
+	font-size: 1em;
+}
+.sub-menu li a {
+	padding:10px 20px;
+	display:inline-block;
+  text-decoration: none;
+}
+.logo {
+  width: 275px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 8px;
+  text-align: center;
+  font-size: 2.375em;
+}
+.top-buttons {
+  position: absolute;
+  right: 2%;
+  top: 1.5%;
+}
+img {
+  width: 100%;
+}
+.menu {
+  position: static;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 410px;
+}
+.dashes {
+  margin-top: 32px;
+  margin-left: -45px;
+}
+/** Shop Page CSS **/
+.shop h2, .shop p {
+  text-align: center;
+}
+ .shop p {
+  font-size: 1.25em;
+  margin-bottom: 50px;
+}
+ .shop p strike {
+  font-size: 1em;
+  color: #666;
+}
+.shop p i {
+  font-size: 1em;
+}
+ .shop h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+  margin-bottom: -20px;
+}
+.shop a img {
+  opacity: 1;
+  transition:opacity linear 0.15s;
+  }
+.shop a:hover img, .shop a:focus img{
+  opacity: 0.65;
+}
+/** Product Page CSS **/
+.product li {
+  display: inline-block;
+    width: 23%;
+    padding: 2%;
+    margin-left: -1.6%;
+    margin-right: -1.6%;
+    text-decoration: none;
+}
+.product li img {
+    opacity: 0.8;
+}
+.product li img:hover {
+    opacity: 1;
+}
+.product ul {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+}
+.product h1 {
+  margin-top: -10px;
+  font-size: 2.375em;
+  margin-bottom: 0;
+}
+.product h2 {
+  margin-top: 0;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+.product p {
+  font-size: 1em;
+letter-spacing: 0.22px;
+letter-spacing: 0.22px;
+line-height: 22px;
+}
+.product a i {
+  font-size: 2em;
+}
+ .product h3, h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.product h3 {
+  font-weight: 600;
+  font-size: 1.125em;
+letter-spacing: 0.16px;
+}
+.product h4 {
+  font-weight: 400;
+  margin-top: 0;
+}
+ .product h4 a i {
+  font-size: 1.125em;
+}
+.product .pagination-img {
+  opacity: 1;
+  transition: all linear 0.15s;
+}
+.product .pagination-img:hover, .product .pagination-img:focus {
+  opacity: 0.7;
+}
+/** Product Image Gallery **/
+.item-gallery-main {
+    position: relative;
+    display: none;
+}
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 1.25em;
+    visibility: hidden;
+}
+/** Custom Select Boxes**/
+.custom-select {
+  position: relative;
+  font-family: 'Avenir Next', Helvetica, sans-serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.custom-select select {
+  display: none;
+}
+.select-selected {
+  background-color: #fff;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 24px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #111 transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #111 transparent;
+  top: 12px;
+}
+.select-items div,.select-selected {
+  color: #111;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-color: transparent rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/** Cart CSS **/
+.button {
+  position: relative;
+  font-family: 'Avenir Next', Helvetica, sans-serif;
+  color: #111;
+  padding: 12px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition:all linear 0.15s;
+} .button:hover, .button:focus {
+  background-color: #D3145A;
+  color: #fff;
+} a:hover .button:hover span, a:focus .button:focus span{
+  color: #fff;
+}
+sup {
+  font-size: 0.75em;
+}
+.cart-item {
+  text-align: center;
+} .cart-item h2 {
+  font-weight: 500;
+}
+
+hr {
+  border: 1px dashed #eee;
+}
+.cart-item .cart-remove {
+  position: absolute;
+  right: 50px;
+  top: 5px;
+} .cart-item img {
+  width: 70%;
+  margin: auto;
+}
+.returns {
+  padding: 50px 0;
+}
+ .returns h5 {
+  text-align: center;
+  margin-bottom: -25px;
+  font-size: 1em;
+  font-weight: 500;
+}
+/** Page Footer **/
+footer {
+  clear: both;
+}
+footer ul {
+  list-style-type: none;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+footer li {
+  font-size: 0.75em;
+  letter-spacing: 1.2px;
+  display: inline-block;
+}
+/*** Home Page Image Carousel **/
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* The Carousel Container */
+.carousel-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+  z-index: -20;
+}
+/* Carousel Caption Text */
+.carousel-text {
+  color: #f2f2f2;
+  font-size: 1.5em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 0px 5px rgba(0, 0, 0, 1);
+  width: 100%;
+  font-family: 'Avenir Next', Helvetica, sans-serif;
+  text-align: center;
+}
+/* The Carousel Nav */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*****  Global Grid System   *****/
+main {
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+section [class^="column"] {
+  float: left;
+  margin: 10px 2%;
+  min-height: 10px;
+}
+  .column-one-fifth, .column-one-third, .column-two-thirds, .column-offset-sm, .column-half, .column-offset-lg, .column-whole {
+  width: 96%;
+}
+.clear {
+	clear: both;
+}
+
+/**   Responsive Bits n' Knobs    **/
+@media only screen and (max-width: 500px) {
+  .sub-menu {
+      margin-left: -4vw;
+  }
+  .menu > ul > li {
+  	float:left;
+  	display:inline-block;
+  	position:relative;
+  	font-size: 0.6em;
+  }
+  .menu > ul > li > a {
+  	padding:10px 10px;
+  	display:inline-block;
+    text-decoration: none;
+  }
+  .sub-menu-items {
+    margin-left: -175px;
+  }
+
+  .sub-menu li {
+    display:inline-block;
+    font-size: 1em !important;
+  }
+  .sub-menu li a {
+    padding:10px 8px;
+    display:inline-block;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 500px) {
+.sub-menu {
+    margin-left: -20.7vw;
+}
+}
+@media only screen and (min-width: 585px) {
+.sub-menu {
+    margin-left: -28.7vw;
+}
+}
+@media only screen and (min-width: 768px) {
+  .sub-menu {
+    margin-left: -32.7vw;
+  }
+  main {
+    width: 90%;
+  }
+  .column-one-fifth {
+  width: 16%;
+}
+.column-one-fourth {
+  width: 21%;
+}
+  .column-one-third {
+    width: 29.33%;
+  }
+  .column-two-thirds {
+    width: 58.66%;
+  }
+  .column-offset-sm {
+    width: 37.66%;
+  }
+  .column-half {
+    width: 46%;
+  }
+  .column-offset-lg {
+    width: 54.33%;
+  }
+  .column-whole {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  main {
+    width: 80%;
+  }
+  .sub-menu {
+    margin-left: -34.7vw;
+  }
+}
+@media only screen and (min-width: 1178px) {
+  .sub-menu {
+    margin-left: -38.7vw;
+  }
+}
+@media only screen and (min-width: 1478px) {
+  .sub-menu {
+    margin-left: -40.7vw;
+  }
+}
+@media only screen and (min-width: 1878px) {
+  .sub-menu {
+    margin-left: -42.7vw;
+  }
+}

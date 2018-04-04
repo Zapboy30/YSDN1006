@@ -1,16 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<body style="font-family: sans-serif; text-align:center;">
-  <br><br>
-  <h2>Project Two Files</h2>
-  <br>
-  <a href="FM-VID_proj2A_PaceMarier.pdf">Project Two Proposal</a>&nbsp;&nbsp;
-  <a href="FM-VID_proj2_Wireframe_PaceMarier.pdf">Project Two Wireframes</a>&nbsp;&nbsp;<a href="FM-VID_proj2_Mockup_PaceMarier.pdf">Project Two Mockups v1</a>&nbsp;&nbsp;<a href="FM-VID_proj2_Mockup_v2_PaceMarier.pdf">Project Two Mockups v2</a>&nbsp;&nbsp;<a href="peer-review.html">Project Two Peer Review</a>
-  <br><br><br><br>
-  <img style="width: 30%; height: 30%; margin: 0 1%;"src="img/tile-1.png"/>
-  <img style="width: 30%; height: 30%; margin: 0 1%;"src="img/tile-2.png"/>
-  <img style="width: 30%; height: 30%; margin: 0 1%;"src="img/tile-3.png"/>
-  <br><br>
-  <sup style="color: #828282">This is a temporary page to get access to files only!</sup>
+<html lang='en'>
+<head>
+  <!-- Misc Metadata -->
+<meta charset="utf-8">
+<title>Comet Apparel | Home</title>
+<meta name="description" content="The Online Home of Comet Apparel">
+<meta name="author" content="Pace Marier">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="clothing, shop, apparel, comet, fashion, adventure"/>
+<meta name="subject" content="Online Shop">
+<meta name="copyright" content="Pace Marier 2018">
+<!-- Links to Fonts, stylesheets, and favicon -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/icons.css" type="text/css">
+<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+<header>
+<!--  Top Nav with Login, Cart, and Language Buttons-->
+<span class="top-buttons"><a href="#">Login <i class="icon-user"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a  href="cart.html">Cart <i class="icon-cart-num"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a  href="#"><strong>en</strong></a> / <a  href="#">fr</a></span>
+<!-- Site Logo -->
+<div  class="logo">
+<img src="img/logo.png" alt="Comet Apparel"/>
+</div>
+</header>
+<!-- Site Navigation -->
+<nav class="menu">
+<ul>
+<li class="current-item"><a href="index.html">HOME</a></li>
+<li>
+<a href="shop.html">SHOP</a>
+<!-- Submenu Navigation, nested in <li> -->
+<ul class="sub-menu">
+  <div class="sub-menu-items">
+<li><a href="shop.html">TOPS</a></li>
+<li><a href="shop.html">BOTTOMS</a></li>
+<li><a href="shop.html">DRESSES</a></li>
+<li><a href="shop.html">BAGS</a></li>
+<li><a href="shop.html">ACCESSORIES</a></li>
+</div>
+</ul>
+</li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="visit.html">VISIT US</a></li>
+</ul>
+</nav>
+
+<!-- Image Carousel -->
+<div class="carousel-container">
+
+<!--  Slide 1-->
+<div class="mySlides fade">
+  <img src="img/home-2.jpg" style="width:100%" alt="A Woman Standing On A Mountain Top">
+  <div class="carousel-text">Built for Adventure!</div>
+</div>
+
+<!--  Slide 2-->
+<div class="mySlides fade">
+  <img src="img/home-1.jpg" style="width:100%" alt="A Woman Drinking Coffee On A Dirt Road">
+  <div class="carousel-text">Clothing For Everywhere!</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="mySlides fade">
+  <img src="img/home-3.jpg" style="width:100%" alt="A Woman Doing The Tree Pose In A Forest">
+  <div class="carousel-text">23% Off All Hiking Boots!</div>
+</div>
+
+</div>
+<br>
+<!-- Slideshow Navigation -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function timer(){
+        plusSlides(1);
+    }
+
+    timer();
+
+    setInterval(function(){timer()}, 30000);
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 </html>
